@@ -1,6 +1,7 @@
 .purchase {
   background-color: rgb(248, 201, 236);
   text-align: center;
+  text-decoration: none;
   &__title {
     padding: 30px 15px 0px 15px;
     // font-family: $fontTitle;
@@ -57,6 +58,9 @@
           font-size: 24px;
           line-height: 1.25;
         }
+        // &:visited {
+        //   color: black;
+        // }
       }
       &--text {
         font-size: 18px;
