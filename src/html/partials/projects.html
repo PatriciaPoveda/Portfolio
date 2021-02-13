@@ -1,74 +1,49 @@
-<section id="purchase" class="purchase">
-  <h3 class="purchase__title">Mis proyectos grupales</h3>
-  <div class="purchase-wrapper">
-    <article class="purchase-wrapper__article item1">
-      <h4 class="purchase-wrapper__article--title">
-        <a href="https://github.com/PatriciaPoveda/Codeflix" target="_blank"
-          >Codeflix</a
-        >
-      </h4>
-
-      <p class="purchase-wrapper__article--text">
-        Web grupal responsive para presentar al equipo. Creada con HTML5, CSS3,
-        Flexbox, Grid, SASS y Git para el control de versiones.
-      </p>
-    </article>
-    <article class="purchase-wrapper__article item2">
-      <h4 class="purchase-wrapper__article--title">
-        <a
-          href="https://github.com/PatriciaPoveda/Profile-Card-S.T.A.R-Coding-Labs"
-          target="_blank"
-          >S.T.A.R CODING LABS</a
-        >
-      </h4>
-      <p class="purchase-wrapper__article--text">
-        Web app que permite crear tarjetas de presentación de forma interactiva.
-        Desarrollada con HTML5, CSS3 y JavaScript.
-      </p>
-    </article>
-    <article class="purchase-wrapper__article item3">
-      <h4 class="purchase-wrapper__article--title">
-        <a
-          href="https://github.com/PatriciaPoveda/Reservoir-CODE"
-          target="_blank"
-          >Reservoir _Code</a
-        >
-      </h4>
-      <p class="purchase-wrapper__article--text">
-        Web basada en el proyecto (Profile-Card) programada con react.
-      </p>
-    </article>
+<section id="project" class="project">
+  <h3 class="project__title">Proyectos conjuntos</h3>
+  <div class="project-wrapper">
+    <include
+      src="./project-card.html"
+      item="item1"
+      githubLinkProject="https://github.com/PatriciaPoveda/Codeflix"
+      title="Codeflix"
+      description="Web grupal responsive para presentar al equipo. Creada con HTML5, CSS3,
+      Flexbox, Grid, SASS y Git para el control de versiones."
+    ></include>
+    <include
+      src="./project-card.html"
+      item="item2"
+      githubLinkProject="https://github.com/PatriciaPoveda/Profile-Card-S.T.A.R-Coding-Labs"
+      title="Profile Card S.T.A.R Coding Labs"
+      description="Web app que permite crear tarjetas de presentación de forma interactiva.
+      Desarrollada con HTML5, CSS3 y JavaScript."
+    ></include>
+    <include
+      src="./project-card.html"
+      item="item3"
+      githubLinkProject="https://github.com/PatriciaPoveda/Reservoir-CODE"
+      title="Reservoir _Code"
+      description="Web basada en el proyecto (Profile-Card) programada con react."
+    ></include>
   </div>
 </section>
-<section id="purchase" class="purchase">
-  <h3 class="purchase__title">Mis proyectos en solitario</h3>
-  <div class="purchase-wrapper">
-    <article class="purchase-wrapper__article item1">
-      <h4 class="purchase-wrapper__article--title">
-        <a href="https://github.com/PatriciaPoveda/Codeflix" target="_blank"
-          >Buscador de series Codeflix</a
-        >
-      </h4>
-
-      <p class="purchase-wrapper__article--text">
-        Web que permite buscar series y guardarlas en favoritos. Desarrollada
-        con HTML5, CSS3, Sass y JavaScript.
-      </p>
-    </article>
-
-    <article class="purchase-wrapper__article item3">
-      <h4 class="purchase-wrapper__article--title">
-        <a
-          href="https://github.com/PatriciaPoveda/Listado-de-personajes-de-Rick-and-Morty"
-          target="_blank"
-          >Listado de personajes de Rick and Morty</a
-        >
-      </h4>
-      <p class="purchase-wrapper__article--text">
-        Web responsive hecha con React y React Router que consiste en un listado
-        de personajes de Rick and Morty, que podemos filtrar por el nombre del
-        personaje.
-      </p>
-    </article>
+<section id="project" class="project">
+  <h3 class="project__title">Proyectos personales</h3>
+  <div class="project-wrapper">
+    <include
+      src="./project-card.html"
+      item="item1"
+      githubLinkProject="https://github.com/PatriciaPoveda/Buscador-de-series-Codeflix"
+      title="Buscador de series Codeflix"
+      description="Web que permite buscar series y guardarlas en favoritos. Desarrollada
+      con HTML5, CSS3, Sass y JavaScript."
+    ></include>
+    <include
+      src="./project-card.html"
+      item="item3"
+      githubLinkProject="https://github.com/PatriciaPoveda/Listado-de-personajes-de-Rick-and-Morty"
+      title="Listado de personajes de Rick and Morty"
+      description="Web responsive hecha con React y React Router que consiste en un listado
+      de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje."
+    ></include>
   </div>
 </section>

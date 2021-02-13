@@ -1,17 +1,53 @@
+.bar {
+  height: 60px;
+  width: 100%;
+  background-color: $colorPrimary1;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  @media all and (min-width: 768px) {
+    justify-content: space-between;
+  }
+  &__nav {
+    &--list {
+      display: flex;
+      justify-content: space-between;
+
+      font-size: 14px;
+      text-transform: uppercase;
+      list-style-type: none;
+
+      font-family: $fontTitle;
+
+      @media all and (min-width: 768px) {
+        font-size: 23px;
+      }
+    }
+  }
+}
+.item {
+  padding: 15px 15px 20px 15px;
+}
+.style {
+  color: $colorPrimary2;
+}
 .hero {
   height: 100vh;
-  background-image: url(../images/Madrid.jpg);
-  opacity: 0.9;
+  background-image: url(../images/gratisography-trash-eyes-1.jpg);
+  // opacity: 0.9;
   background-size: cover;
   background-position: top;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   // position: relative;
   &-wrapper {
-    color: $colorTextSecondary;
+    color: $colorPrimary2;
     // position: absolute;
     bottom: 143px;
     @media all and (min-width: 768px) {
@@ -21,7 +57,7 @@
       // bottom: 88px;
     }
     &__title {
-      // font-family: $fontTitle;
+      font-family: $fontTitle;
       font-size: 42px;
       line-height: 1.31;
       text-transform: uppercase;
