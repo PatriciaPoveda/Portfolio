@@ -10,24 +10,39 @@
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="page">
-      <header id="top" class="hero">
-        <!-- <button class="hero-header-menu" type="button" title="Ir a Menu">
-          <a href="https://adalab.es/">
-            <img src="./assets/images/ico-menu.svg" alt="Menu"
-          /></a>
-        </button> -->
-        <div class="hero-wrapper">
-          <h1 class="hero-wrapper__title">El retrato de Patricia Poveda</h1>
-          <!-- <p class="hero-wrapper__text">In hac habitase platea dictumst.</p> -->
+      <header id="top">
+        <div class="bar">
+          <nav class="bar__nav">
+            <ul class="bar__nav--list">
+              <li class="item"><a href="#contact" class="style"> Contactame</a></li>
+            </ul>
+          </nav>
+          <nav class="bar__nav">
+            <ul class="bar__nav--list">
+              <li class="item"><a href="#about" class="style"> About me</a></li>
+              <li class="item"><a href="#project" class="style">Proyectos </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero">
+          <div class="hero-wrapper">
+            <h1 class="hero-wrapper__title">El retrato de Patricia Poveda</h1>
+            <!-- <p class="hero-wrapper__text">In hac habitase platea dictumst.</p> -->
+          </div>
         </div>
       </header>
 
       <main>
-        <section class="tip">
+        <section class="tip" id="about">
           <article class="tip__article">
             <h3 class="tip__article--title">¿Quién soy yo?</h3>
             <div class="tip__article--text">
@@ -55,78 +70,78 @@
           </article>
         </section>
 
-        <section id="purchase" class="purchase">
-          <h3 class="purchase__title">Mis proyectos grupales</h3>
-          <div class="purchase-wrapper">
-            <article class="purchase-wrapper__article item1">
-              <h4 class="purchase-wrapper__article--title">
-                <a href="https://github.com/PatriciaPoveda/Codeflix" target="_blank"
+        <section id="project" class="project">
+          <h3 class="project__title">Proyectos conjuntos</h3>
+          <div class="project-wrapper">
+            <article class="project-wrapper__article item1">
+              <h4>
+                <a
+                  href="https://github.com/PatriciaPoveda/Codeflix"
+                  target="_blank"
+                  class="project-wrapper__article--title"
                   >Codeflix</a
                 >
               </h4>
-
-              <p class="purchase-wrapper__article--text">
-                Web grupal responsive para presentar al equipo. Creada con HTML5, CSS3,
-                Flexbox, Grid, SASS y Git para el control de versiones.
-              </p>
+              <p class="project-wrapper__article--text">Web grupal responsive para presentar al equipo. Creada con HTML5, CSS3,
+              Flexbox, Grid, SASS y Git para el control de versiones.</p>
             </article>
-            <article class="purchase-wrapper__article item2">
-              <h4 class="purchase-wrapper__article--title">
+
+            <article class="project-wrapper__article item2">
+              <h4>
                 <a
                   href="https://github.com/PatriciaPoveda/Profile-Card-S.T.A.R-Coding-Labs"
                   target="_blank"
-                  >S.T.A.R CODING LABS</a
+                  class="project-wrapper__article--title"
+                  >Profile Card S.T.A.R Coding Labs</a
                 >
               </h4>
-              <p class="purchase-wrapper__article--text">
-                Web app que permite crear tarjetas de presentación de forma interactiva.
-                Desarrollada con HTML5, CSS3 y JavaScript.
-              </p>
+              <p class="project-wrapper__article--text">Web app que permite crear tarjetas de presentación de forma interactiva.
+              Desarrollada con HTML5, CSS3 y JavaScript.</p>
             </article>
-            <article class="purchase-wrapper__article item3">
-              <h4 class="purchase-wrapper__article--title">
+
+            <article class="project-wrapper__article item3">
+              <h4>
                 <a
                   href="https://github.com/PatriciaPoveda/Reservoir-CODE"
                   target="_blank"
+                  class="project-wrapper__article--title"
                   >Reservoir _Code</a
                 >
               </h4>
-              <p class="purchase-wrapper__article--text">
-                Web basada en el proyecto (Profile-Card) programada con react.
-              </p>
+              <p class="project-wrapper__article--text">Web basada en el proyecto (Profile-Card) programada con react.</p>
             </article>
+
           </div>
         </section>
-        <section id="purchase" class="purchase">
-          <h3 class="purchase__title">Mis proyectos en solitario</h3>
-          <div class="purchase-wrapper">
-            <article class="purchase-wrapper__article item1">
-              <h4 class="purchase-wrapper__article--title">
-                <a href="https://github.com/PatriciaPoveda/Codeflix" target="_blank"
+        <section id="project" class="project">
+          <h3 class="project__title">Proyectos personales</h3>
+          <div class="project-wrapper">
+            <article class="project-wrapper__article item1">
+              <h4>
+                <a
+                  href="https://github.com/PatriciaPoveda/Buscador-de-series-Codeflix"
+                  target="_blank"
+                  class="project-wrapper__article--title"
                   >Buscador de series Codeflix</a
                 >
               </h4>
-
-              <p class="purchase-wrapper__article--text">
-                Web que permite buscar series y guardarlas en favoritos. Desarrollada
-                con HTML5, CSS3, Sass y JavaScript.
-              </p>
+              <p class="project-wrapper__article--text">Web que permite buscar series y guardarlas en favoritos. Desarrollada
+              con HTML5, CSS3, Sass y JavaScript.</p>
             </article>
 
-            <article class="purchase-wrapper__article item3">
-              <h4 class="purchase-wrapper__article--title">
+            <article class="project-wrapper__article item3">
+              <h4>
                 <a
                   href="https://github.com/PatriciaPoveda/Listado-de-personajes-de-Rick-and-Morty"
                   target="_blank"
+                  class="project-wrapper__article--title"
                   >Listado de personajes de Rick and Morty</a
                 >
               </h4>
-              <p class="purchase-wrapper__article--text">
-                Web responsive hecha con React y React Router que consiste en un listado
-                de personajes de Rick and Morty, que podemos filtrar por el nombre del
-                personaje.
-              </p>
+              <p class="project-wrapper__article--text">Web responsive hecha con React y React Router que consiste en un listado
+              de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje.</p>
             </article>
+
           </div>
         </section>
 
@@ -136,7 +151,8 @@
 
       
  -->
-      <footer class="menu">
+      <footer class="menu" id="contact">
+        <p class="menu-text">Informacion de contacto</p>
         <div class="menu-wrapper">
           <nav>
             <ul class="menu-wrapper__list">
@@ -214,8 +230,11 @@
               </li>
             </ul>
           </nav>
-          <small class="menu-wrapper__copy"
-            ><span class="menu-wrapper__copy--item">&copy;2021</span>
+          <small class="menu-wrapper__copy">
+            <a href="#top" class="menu-wrapper__list--item" title="Ir a inicio"
+              >Ir a Inicio</a
+            >
+            <span class="menu-wrapper__copy--item">&copy;2021</span>
             <!-- <span class="menu-wrapper__copy--item"
               >we
               <span class="menu-wrapper__copy--heart">&#10084;</span>
