@@ -1,7 +1,15 @@
-.moreAboutMe__sectionWrapper--img {
+.moreAboutMe__sectionWrapper--art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.moreAboutMe__sectionWrapper--artImg {
   width: 60px;
-  margin: 5px;
+  margin: 4px;
   @media all and (min-width: 1200px) {
-    margin: 8px;
+    margin: 5px;
   }
+}
+.moreAboutMe__sectionWrapper--artText {
+  color: $colorPrimary3;
 }
