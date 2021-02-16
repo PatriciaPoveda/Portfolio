@@ -1,18 +1,24 @@
-.tip {
-  // background-color: #f8f1e5;
+.aboutMe {
+  color: $colorPrimary1;
   padding: 30px 15px 45px 15px;
   @media all and (min-width: 768px) {
     padding: 30px 39px 60px 39px;
   }
   @media all and (min-width: 1200px) {
-    margin: auto;
+    margin: initial;
     padding: 60px 0;
-    max-width: 730px;
+    margin-left: 50px;
+    display: flex;
   }
   &__article {
     text-align: center;
-    font-family: "Caveat", cursive;
-
+    font-family: $fontText;
+    @media all and (min-width: 768px) {
+      text-align: left;
+    }
+    @media all and (min-width: 1200px) {
+      max-width: 730px;
+    }
     &--title {
       // font-family: $fontTitle;
       font-size: 24px;
@@ -27,18 +33,49 @@
         line-height: 1.41;
       }
     }
+    &--img {
+      width: 200px;
+    }
     &--text {
       margin-top: 15px;
       margin-bottom: 30px;
-      color: $colorTextArticle;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 1.67;
       @media all and (min-width: 768px) {
         margin-top: 30px;
-        font-size: 30px;
+        font-size: 18px;
         line-height: 1.5;
       }
+    }
+  }
+}
+.text {
+  margin-bottom: 20px;
+}
+
+.moreAboutMe {
+  font-family: $fontText;
+  font-size: 17px;
+  text-align: justify;
+  margin-top: 20px;
+  color: $colorPrimary1;
+  background-color: $colorPrimary4;
+  @media all and (min-width: 1200px) {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .moreAboutMe__sectionWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 290px;
+    @media all and (min-width: 768px) {
+      width: 100%;
+    }
+    &--title {
+      margin: 10px 0;
+      font-size: 15px;
     }
   }
 }

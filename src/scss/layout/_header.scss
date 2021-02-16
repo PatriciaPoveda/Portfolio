@@ -36,8 +36,8 @@
 }
 .hero {
   height: 100vh;
-  background-image: url(../images/gratisography-trash-eyes-1.jpg);
-  // opacity: 0.9;
+  background-image: url(../images/gratisography-trash-eyes-320.jpg);
+
   background-size: cover;
   background-position: top;
   display: flex;
@@ -45,7 +45,13 @@
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  // position: relative;
+
+  // @media all and (min-width: 768px) {
+  //   background-image: url(../images/gratisography-trash-eyes-320.jpg);
+  // }
+  @media all and (min-width: 1200px) {
+    background-image: url(../images/gratisography-trash-eyes-1.jpg);
+  }
   &-wrapper {
     color: $colorPrimary2;
     // position: absolute;
@@ -58,11 +64,11 @@
     }
     &__title {
       font-family: $fontTitle;
-      font-size: 42px;
+      font-size: 36px;
       line-height: 1.31;
       text-transform: uppercase;
-      // text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-      margin-bottom: 10px;
+      text-shadow: 0 2px 3px rgba(77, 48, 48, 0.7);
+      margin-bottom: 5px;
       animation-name: __title;
       animation-duration: 6s;
       animation-iteration-count: 1;
@@ -82,10 +88,22 @@
         margin-bottom: 20px;
       }
       @media all and (min-width: 1200px) {
-        font-size: 100px;
+        font-size: 80px;
         line-height: 1.32;
         text-shadow: 0 2px 5px $colorshadow;
         margin-bottom: 0px;
+        width: 200px;
+        transform: translate(40%, -25%);
+        @keyframes __title {
+          from {
+            opacity: 0;
+            transform: translate(40%, -60%);
+          }
+          to {
+            opacity: 1;
+            transform: translate(40%, -25%);
+          }
+        }
       }
     }
     // &__text {
