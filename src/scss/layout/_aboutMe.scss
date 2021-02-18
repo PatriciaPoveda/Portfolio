@@ -5,7 +5,7 @@
     padding: 30px 39px 60px 39px;
   }
   @media all and (min-width: 1200px) {
-    margin: initial;
+    margin: auto;
     padding: 60px 0;
     margin-left: 50px;
     display: flex;
@@ -64,9 +64,9 @@
   padding: 10px;
 
   @media all and (min-width: 1200px) {
-    margin-left: 80px;
-    margin-top: 280px;
-    max-height: 350px;
+    margin: 280px 15px 0 55px;
+    height: 370px;
+    width: 800px;
   }
   &__section--title {
     margin: 20px 0;
@@ -76,9 +76,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 280px;
+    // width: 270px;
     @media all and (min-width: 768px) {
       width: 100%;
+      flex-wrap: nowrap;
     }
   }
 }

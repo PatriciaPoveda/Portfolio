@@ -4,10 +4,10 @@
   align-items: center;
 }
 .moreAboutMe__sectionWrapper--artImg {
-  width: 60px;
-  margin: 4px;
-  @media all and (min-width: 1200px) {
-    margin: 5px;
+  width: 55px;
+  margin: 17px;
+  @media all and (min-width: 768px) {
+    margin: 10px;
   }
 }
 .moreAboutMe__sectionWrapper--artText {
