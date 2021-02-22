@@ -7,16 +7,16 @@
   &-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30px 400px 400px 400px 30px 400px 400px;
+    grid-template-rows: 30px 470px 470px 470px 30px 470px 470px;
     row-gap: 30px;
     margin: 30px 0px;
     @media all and (min-width: 768px) {
       gap: 40px;
       grid-template-columns: 130px 130px 130px 130px 130px 130px;
-      grid-template-rows: 50px 400px 400px 50px 400px;
+      grid-template-rows: 50px 500px 500px 50px 500px;
     }
     @media all and (min-width: 1200px) {
-      grid-template-rows: 50px 400px 50px 400px;
+      grid-template-rows: 50px 500px 50px 500px;
     }
     &__title {
       font-size: 24px;
@@ -35,12 +35,15 @@
     }
     &__article {
       grid-column: 1 / 7;
-      height: 400px;
+      height: 470px;
       width: 260px;
       margin: auto;
       border: solid 1px black;
       border-radius: 20px;
-
+      padding: 20px;
+      @media all and (min-width: 768px) {
+        height: 500px;
+      }
       &.item1 {
         @media all and (min-width: 768px) {
           grid-column: 2 / 4;
@@ -75,11 +78,21 @@
           grid-column: 4 / 6;
         }
       }
+      &--img {
+        width: 220px;
+        // height: 120px;
+        max-height: 150px;
+        // margin: 20px;
+        // border: black solid 1px;
+        background-color: white;
+        border-radius: 20px;
+      }
       &--title {
         text-decoration: none;
         color: $colorPrimary4;
         font-size: 18px;
         line-height: 1.67;
+        height: 55px;
         @media all and (min-width: 768px) {
           font-size: 24px;
           line-height: 1.25;
@@ -92,11 +105,25 @@
         font-size: 18px;
         line-height: 1.67;
         color: $colorPrimary3;
+        height: 190px;
         @media all and (min-width: 768px) {
           font-size: 20px;
           line-height: 1.5;
+          height: 220px;
         }
       }
+      // &--btn {
+      //   display: flex;
+      //   align-self: flex-end;
+      // }
     }
   }
+}
+.project-btn {
+  text-decoration: none;
+  padding: 6px 24px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: blanchedalmond;
 }
