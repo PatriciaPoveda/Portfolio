@@ -1,10 +1,10 @@
 .menu {
-  background-color: #426e86;
+  background-color: $colorPrimary3;
   text-align: center;
   text-transform: uppercase;
   font-family: $fontText;
   &-text {
-    color: $colorPrimary2;
+    color: $colorPrimary4;
     font-size: 25px;
     padding: 20px 0 20px 0;
   }
