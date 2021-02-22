@@ -22,7 +22,7 @@
       font-size: 24px;
       line-height: 1.25;
       text-transform: uppercase;
-      color: $colorPrimary1;
+      color: $colordetails;
       grid-column: 1 / 7;
       @media all and (min-width: 768px) {
         font-size: 26px;
@@ -34,11 +34,11 @@
       }
     }
     &__article {
+      background-color: $colorSecundary1;
       grid-column: 1 / 7;
       height: 470px;
       width: 260px;
       margin: auto;
-      border: solid 1px black;
       border-radius: 20px;
       padding: 20px;
       @media all and (min-width: 768px) {
@@ -80,16 +80,13 @@
       }
       &--img {
         width: 220px;
-        // height: 120px;
         max-height: 150px;
-        // margin: 20px;
-        // border: black solid 1px;
         background-color: white;
         border-radius: 20px;
       }
       &--title {
         text-decoration: none;
-        color: $colorPrimary4;
+        color: $colordetails;
         font-size: 18px;
         line-height: 1.67;
         height: 55px;
@@ -97,14 +94,11 @@
           font-size: 24px;
           line-height: 1.25;
         }
-        // &:visited {
-        //   color: black;
-        // }
       }
       &--text {
         font-size: 18px;
         line-height: 1.67;
-        color: $colorPrimary3;
+        color: $colorPrimary2;
         height: 190px;
         @media all and (min-width: 768px) {
           font-size: 20px;
@@ -125,5 +119,10 @@
   outline: none;
   border: none;
   border-radius: 25px;
-  background-color: blanchedalmond;
+  color: $colorPrimary1;
+  background-color: $colordetails2;
+  font-size: 18px;
+  &:hover {
+    background-color: $colordetails;
+  }
 }

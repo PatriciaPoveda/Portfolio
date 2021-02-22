@@ -1,7 +1,7 @@
 .bar {
   height: 60px;
   width: 100%;
-  background-color: $colorPrimary1;
+  background-color: $colorPrimary3;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -15,13 +15,10 @@
     &--list {
       display: flex;
       justify-content: space-between;
-
       font-size: 13px;
       text-transform: uppercase;
       list-style-type: none;
-
-      font-family: $fontTitle;
-
+      font-family: $fontText;
       @media all and (min-width: 768px) {
         font-size: 23px;
       }
@@ -32,17 +29,18 @@
   padding: 15px 12px 20px 12px;
 }
 .style {
-  color: $colorPrimary2;
+  color: $colordetails2;
+  &:hover {
+    color: $colordetails;
+  }
 }
 .hero {
   height: 100vh;
   background-image: url(../images/gratisography-trash-eyes-320.jpg);
-
   background-size: cover;
   background-position: top;
   display: flex;
   flex-direction: column;
-  // justify-content: flex-end;
   align-items: center;
   text-align: center;
   position: relative;
@@ -51,13 +49,13 @@
   }
 
   &__title {
-    color: $colorPrimary2;
+    color: $colorSecundary1;
     font-family: $fontTitle;
     font-size: 36px;
     position: absolute;
     line-height: 1.31;
     text-transform: uppercase;
-    text-shadow: 0 2px 3px rgba(77, 48, 48, 0.7);
+    // text-shadow: 0 2px 3px rgba(77, 48, 48, 0.7);
     bottom: 20px;
     animation-name: __title;
     animation-duration: 6s;
