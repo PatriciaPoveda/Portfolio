@@ -1,18 +1,16 @@
-.moreAboutMe__sectionWrapper--art {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // &:hover {
-  //   background-color: gray;
-  //   border-radius: 10px;
-  // }
-}
+// .moreAboutMe__sectionWrapper--art {
+
+// }
 .moreAboutMe__sectionWrapper--artImg {
   width: 55px;
   margin: 17px;
+  // &:hover {
+  // }
   @media all and (min-width: 768px) {
     margin: 10px;
   }
 }
-// .moreAboutMe__sectionWrapper--artText {
-// }
+.moreAboutMe__sectionWrapper--artText {
+  text-align: center;
+  margin-top: -3px;
+}

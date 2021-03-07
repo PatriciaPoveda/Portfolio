@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  color: $textPrimary;
+}
 a {
+  color: $textPrimary;
   text-decoration: none;
 }

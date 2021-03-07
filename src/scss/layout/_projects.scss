@@ -1,6 +1,7 @@
 .project {
   position: relative;
-  background-color: $colorPrimary2;
+  // background-color: $colorPrimary2;
+  background-color: $colorSecundary;
   text-align: center;
   font-family: $fontText;
   display: flex;
@@ -30,7 +31,7 @@
       font-size: 24px;
       line-height: 1.25;
       text-transform: uppercase;
-      color: $colordetails2;
+      // color: $colordetails2;
       grid-column: 1 / 7;
       @media all and (min-width: 768px) {
         font-size: 26px;
@@ -42,7 +43,9 @@
       }
     }
     &__article {
-      background-color: $colorSecundary1;
+      // background-color: $colorSecundary1;
+      background-color: $colorSecundary2;
+
       grid-column: 1 / 7;
       height: 500px;
       width: 260px;
@@ -102,7 +105,8 @@
       }
       &--title {
         text-decoration: none;
-        color: $colordetails2;
+        // color: $colordetails2;
+        color: $colorCart;
         font-size: 18px;
         line-height: 1.67;
         height: 55px;
@@ -115,8 +119,10 @@
       &--text {
         font-size: 18px;
         line-height: 1.67;
-        color: $colorPrimary2;
+        // color: $colorPrimary2;
+        color: $colorHover;
         // height: 215px;
+        font-weight: 600;
         @media all and (min-width: 768px) {
           font-size: 20px;
           line-height: 1.5;
@@ -135,10 +141,12 @@
   outline: none;
   border: none;
   border-radius: 25px;
-  color: $colorPrimary1;
-  background-color: $colordetails2;
+  // color: $colorPrimary1;
+  // background-color: $colordetails2;
+  background-color: $colorCart;
   font-size: 18px;
   &:hover {
-    background-color: $colordetails;
+    // background-color: $colordetails;
+    background-color: $colorHover;
   }
 }

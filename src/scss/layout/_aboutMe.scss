@@ -1,6 +1,7 @@
 .aboutMe {
   position: relative;
-  color: $colorPrimary1;
+  // color: $colorPrimary1;
+  color: $colorPrimary;
   padding: 30px 15px 45px 15px;
   @media all and (min-width: 768px) {
     padding: 30px 39px 60px 39px;
@@ -23,9 +24,10 @@
     font-family: $fontText;
     @media all and (min-width: 768px) {
       text-align: left;
+      // max-width: 95%;
     }
     @media all and (min-width: 1200px) {
-      max-width: 730px;
+      max-width: 60%;
     }
     &--title {
       // font-family: $fontTitle;
@@ -41,9 +43,13 @@
         line-height: 1.41;
       }
     }
+
     &--img {
-      width: 200px;
-      border-radius: 100px;
+      width: 220px;
+      @media all and (min-width: 768px) {
+        float: left;
+        margin-right: 25px;
+      }
     }
     &--text {
       margin-top: 15px;
@@ -55,6 +61,10 @@
         margin-top: 30px;
         font-size: 18px;
         line-height: 1.5;
+        // width: 625px;
+      }
+      @media all and (min-width: 1200px) {
+        // width: 790px;
       }
     }
   }
@@ -68,27 +78,32 @@
   font-size: 17px;
   text-align: justify;
   margin-top: 20px;
-  color: $colorPrimary1;
-  background-color: $colordetails2;
-  padding: 10px;
+  // color: $colorPrimary1;
+  // background-color: $colordetails2;
+  background-color: $textPrimary;
+  padding: 20px;
   border-radius: 10px;
+  // border: solid 1px $colorSecundary1;
   @media all and (min-width: 1200px) {
-    margin: 280px 15px 0 55px;
+    margin: 91px 15px 0 100px;
     height: 370px;
-    width: 800px;
+    // width: 800px;
   }
   &__section--title {
-    margin: 20px 0;
+    // margin: 5px 0;
     font-size: 15px;
   }
   .moreAboutMe__sectionWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    // width: 270px;
+
     @media all and (min-width: 768px) {
-      width: 100%;
       flex-wrap: nowrap;
+    }
+    @media all and (min-width: 1200px) {
+      flex-wrap: wrap;
+      width: 270px;
     }
   }
 }
