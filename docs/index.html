@@ -19,13 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS only -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    <link
+      href="//db.onlinewebfonts.com/c/7fe31e43d915d5ecfc475ec9b2ae311d?family=Dirtgrub+Graffiti"
       rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    /> -->
+      type="text/css"
+    />
   </head>
 
   <body>
@@ -45,10 +43,10 @@
           </nav>
         </div>
         <div class="hero">
-          <!-- <div class="hero-wrapper"> -->
-          <h1 class="hero__title">El retrato de Patricia</h1>
-          <!-- <p class="hero-wrapper__text">In hac habitase platea dictumst.</p> -->
-          <!-- </div> -->
+          <div class="hero__title">
+            <span>Patricia</span>
+            <span class="hero__title--span">Poveda</span>
+          </div>
         </div>
       </header>
 
@@ -57,103 +55,128 @@
           <span id="about" class="about"></span>
           <article class="aboutMe__article">
             <h3 class="aboutMe__article--title">¿Quién soy yo?</h3>
-            <img
-              src="./assets/images/patricia-poveda.jpg"
-              class="aboutMe__article--img"
-              alt=""
-            />
-            <div class="aboutMe__article--text">
-              <!-- <p>Cada mujer es una historia que no se parece a ninguna otra.</p>
-              <p>¿Y cuál es mi historia? ¿Cómo acabé siendo programadora front-end?</p> -->
-
-              <p class="text">
-                Me llamo <strong>Patricia Poveda</strong> y soy licenciada en filología
-                clásica por UCM. He sido profesora durante 8 años, lo que me ha
-                permitido desarrollar mis cualidades organizativas y mi capacidad de
-                comunicación.
-              </p>
-              <p class="text">
-                Sin embargo, desde joven he sido una apasionada de los ordenadores y la
-                programación, y siempre he deseado poder desarrollar mi carrera en ese
-                sentido.
-              </p>
-              <p class="text">
-                Con esta idea en mente, decidí cursar el bootcamp de
-                <strong>Adalab</strong> donde he recibido formación, entre otras cosas,
-                de maquetación con <strong>HTML5</strong> , <strong>CSS3</strong> y
-                <strong>Sass</strong>, <strong>vanilla javaScript</strong>,
-                <strong>React</strong> y <strong>Node.js</strong>. Además, he hecho
-                prácticas tanto de <strong>pair programming</strong> como de
-                <strong>mob programming</strong>, y he utilizado la metodología
-                <strong>agile</strong> y <strong>scrum</strong> para la gestión de mis
-                tareas.
-              </p>
-              <p class="text">
-                Ahora estoy en la búsqueda de mi primer trabajo como developer frontend
-                y tengo muchas ganas no solo de demostrar toda mi capacidad de
-                aprendizaje sino toda la ilusión y el esfuerzo que le puedo poner al
-                trabajo.
-              </p>
+            <div class="aboutMe__article-wrapper">
+              <img
+                src="./assets/images/patricia-poveda.jpg"
+                class="aboutMe__article--img"
+                alt=""
+              />
+              <div class="aboutMe__article--text">
+                <!-- <p>Cada mujer es una historia que no se parece a ninguna otra.</p> -->
+                <p class="text">
+                  Me llamo <strong>Patricia Poveda</strong> y soy licenciada en
+                  filología clásica por UCM. He sido profesora durante 8 años, lo que me
+                  ha permitido desarrollar mis cualidades organizativas y mi capacidad
+                  de comunicación.
+                </p>
+                <p class="text">
+                  Sin embargo, desde joven he sido una apasionada de los ordenadores y
+                  la programación, y siempre he deseado poder desarrollar mi carrera en
+                  ese sentido.
+                </p>
+                <p class="text">
+                  Con esta idea en mente, decidí cursar el bootcamp de
+                  <strong>Adalab</strong> donde he recibido formación, entre otras
+                  cosas, de maquetación con <strong>HTML5</strong> ,
+                  <strong>CSS3</strong> y <strong>Sass</strong>,
+                  <strong>vanilla javaScript</strong>, <strong>React</strong> y
+                  <strong>Node.js</strong>. Además, he hecho prácticas tanto de
+                  <strong>pair programming</strong> como de
+                  <strong>mob programming</strong>, y he utilizado la metodología
+                  <strong>agile</strong> y <strong>scrum</strong> para la gestión de mis
+                  tareas.
+                </p>
+                <p class="text">
+                  Ahora estoy en la búsqueda de mi primer trabajo como developer
+                  frontend y tengo muchas ganas no solo de demostrar toda mi capacidad
+                  de aprendizaje sino toda la ilusión y el esfuerzo que le puedo poner
+                  al trabajo.
+                </p>
+              </div>
             </div>
             <cite>Audentes fortuna iuvat </cite>
           </article>
           <aside class="moreAboutMe">
-            <h4 class="moreAboutMe__title">Otra información sobre mi</h4>
+            <!-- <h4 class="moreAboutMe__title">Otra información sobre mi</h4> -->
             <section class="moreAboutMe__section">
               <h5 class="moreAboutMe__section--title">Competencias</h5>
               <div class="moreAboutMe__sectionWrapper">
-                <img
-                  src="./assets/images/png/030-html-5.png"
-                  alt="Logo de HTML"
-                  class="moreAboutMe__sectionWrapper--artImg"
-                />
+                <div class="moreAboutMe__sectionWrapper--art">
+                  <img
+                    src="./assets/images/png/030-html-5.png"
+                    alt="Logo de HTML"
+                    class="moreAboutMe__sectionWrapper--artImg"
+                  />
+                  <p class="moreAboutMe__sectionWrapper--artText">HTML 5</p>
+                </div>
 
-                <img
-                  src="./assets/images/png/031-css.png"
-                  alt="Logo de CSS"
-                  class="moreAboutMe__sectionWrapper--artImg"
-                />
+                <div class="moreAboutMe__sectionWrapper--art">
+                  <img
+                    src="./assets/images/png/031-css.png"
+                    alt="Logo de CSS"
+                    class="moreAboutMe__sectionWrapper--artImg"
+                  />
+                  <p class="moreAboutMe__sectionWrapper--artText">CSS</p>
+                </div>
 
-                <img
-                  src="./assets/images/png/026-sass.png"
-                  alt="Logo de Sass"
-                  class="moreAboutMe__sectionWrapper--artImg"
-                />
+                <div class="moreAboutMe__sectionWrapper--art">
+                  <img
+                    src="./assets/images/png/026-sass.png"
+                    alt="Logo de Sass"
+                    class="moreAboutMe__sectionWrapper--artImg"
+                  />
+                  <p class="moreAboutMe__sectionWrapper--artText">Sass</p>
+                </div>
 
-                <img
-                  src="./assets/images/png/029-javascript.png"
-                  alt="Logo de javaScript"
-                  class="moreAboutMe__sectionWrapper--artImg"
-                />
+                <div class="moreAboutMe__sectionWrapper--art">
+                  <img
+                    src="./assets/images/png/029-javascript.png"
+                    alt="Logo de javaScript"
+                    class="moreAboutMe__sectionWrapper--artImg"
+                  />
+                  <p class="moreAboutMe__sectionWrapper--artText">javaScript</p>
+                </div>
 
-                <img
-                  src="./assets/images/png/006-react.png"
-                  alt="Logo de React"
-                  class="moreAboutMe__sectionWrapper--artImg"
-                />
+                <div class="moreAboutMe__sectionWrapper--art">
+                  <img
+                    src="./assets/images/png/006-react.png"
+                    alt="Logo de React"
+                    class="moreAboutMe__sectionWrapper--artImg"
+                  />
+                  <p class="moreAboutMe__sectionWrapper--artText">React</p>
+                </div>
 
-                <img
-                  src="./assets/images/png/032-nodejs.png"
-                  alt="Logo de Node.js"
-                  class="moreAboutMe__sectionWrapper--artImg"
-                />
+                <div class="moreAboutMe__sectionWrapper--art">
+                  <img
+                    src="./assets/images/png/032-nodejs.png"
+                    alt="Logo de Node.js"
+                    class="moreAboutMe__sectionWrapper--artImg"
+                  />
+                  <p class="moreAboutMe__sectionWrapper--artText">Node.JS</p>
+                </div>
 
-                <img
-                  src="./assets/images/png/010-github.png"
-                  alt="Logo de GitHub"
-                  class="moreAboutMe__sectionWrapper--artImg"
-                />
+                <div class="moreAboutMe__sectionWrapper--art">
+                  <img
+                    src="./assets/images/png/010-github.png"
+                    alt="Logo de GitHub"
+                    class="moreAboutMe__sectionWrapper--artImg"
+                  />
+                  <p class="moreAboutMe__sectionWrapper--artText">GitHub</p>
+                </div>
 
-                <img
-                  src="./assets/images/png/gulp.png"
-                  alt="Logo de Gulp"
-                  class="moreAboutMe__sectionWrapper--artImg"
-                />
+                <div class="moreAboutMe__sectionWrapper--art">
+                  <img
+                    src="./assets/images/png/gulp.png"
+                    alt="Logo de Gulp"
+                    class="moreAboutMe__sectionWrapper--artImg"
+                  />
+                  <p class="moreAboutMe__sectionWrapper--artText">Gulp</p>
+                </div>
 
               </div>
             </section>
 
-            <section>
+            <!-- <section>
               <h5 class="moreAboutMe__section--title">Soft skills</h5>
               <div class="moreAboutMe__sectionWrapper">
                 <article class="moreAboutMe__sectionWrapper--art">
@@ -202,8 +225,9 @@
                 </article>
 
               </div>
-            </section>
+            </section> -->
           </aside>
+
         </section>
 
         <section class="project">
@@ -225,7 +249,6 @@
                   <a href="https://patriciapoveda.github.io/Codeflix/" class="project-btn" target="_blank">Demo</a>
                   <a href="https://github.com/PatriciaPoveda/Codeflix" target="_blank" class="project-btn"
                     >Code
-                    <!-- <button class="project-btn">Code</button> -->
                   </a>
                 </div>
               </div>
@@ -246,7 +269,6 @@
                   <a href="https://patriciapoveda.github.io/Profile-Card-S.T.A.R-Coding-Labs/" class="project-btn" target="_blank">Demo</a>
                   <a href="https://github.com/PatriciaPoveda/Profile-Card-S.T.A.R-Coding-Labs" target="_blank" class="project-btn"
                     >Code
-                    <!-- <button class="project-btn">Code</button> -->
                   </a>
                 </div>
               </div>
@@ -266,7 +288,6 @@
                   <a href="https://patriciapoveda.github.io/Reservoir-CODE/#/" class="project-btn" target="_blank">Demo</a>
                   <a href="https://github.com/PatriciaPoveda/Reservoir-CODE" target="_blank" class="project-btn"
                     >Code
-                    <!-- <button class="project-btn">Code</button> -->
                   </a>
                 </div>
               </div>
@@ -288,7 +309,6 @@
                   <a href="https://patriciapoveda.github.io/Buscador-de-series-Codeflix/" class="project-btn" target="_blank">Demo</a>
                   <a href="https://github.com/PatriciaPoveda/Buscador-de-series-Codeflix" target="_blank" class="project-btn"
                     >Code
-                    <!-- <button class="project-btn">Code</button> -->
                   </a>
                 </div>
               </div>
@@ -309,7 +329,6 @@
                   <a href="https://patriciapoveda.github.io/Listado-de-personajes-de-Rick-and-Morty/" class="project-btn" target="_blank">Demo</a>
                   <a href="https://github.com/PatriciaPoveda/Listado-de-personajes-de-Rick-and-Morty" target="_blank" class="project-btn"
                     >Code
-                    <!-- <button class="project-btn">Code</button> -->
                   </a>
                 </div>
               </div>
@@ -320,10 +339,6 @@
 
       </main>
 
-      <!-- 
-
-      
- -->
       <footer class="menu" id="contact">
         <p class="menu-text">Información de contacto</p>
         <div class="menu-wrapper">
@@ -338,38 +353,6 @@
                   >e-mail
                 </a>
               </li>
-              <!-- <li>
-                <a
-                  href="https://adalab.es/"
-                  class="menu-wrapper__list--item"
-                  title="Ir a Libros"
-                  >Books</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://adalab.es/"
-                  class="menu-wrapper__list--item"
-                  title="Ir a Eventos"
-                  >Events</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://adalab.es/"
-                  class="menu-wrapper__list--item"
-                  title="Ir a Razones"
-                  >Reasons</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://adalab.es/"
-                  class="menu-wrapper__list--item"
-                  title="Ir a Consejos"
-                  >Tips</a
-                >
-              </li> -->
             </ul>
           </nav>
           <nav>
