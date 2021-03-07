@@ -1,11 +1,12 @@
-// .moreAboutMe__sectionWrapper--art {
-
-// }
+.moreAboutMe__sectionWrapper--art {
+  background-color: #dfdfdd;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
 .moreAboutMe__sectionWrapper--artImg {
   width: 55px;
   margin: 17px;
-  // &:hover {
-  // }
   @media all and (min-width: 768px) {
     margin: 10px;
   }

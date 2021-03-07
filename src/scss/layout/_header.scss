@@ -1,7 +1,6 @@
 .bar {
   height: 45px;
   width: 100%;
-  // background-color: $colorPrimary3;
   background-color: $colorPrimary;
   position: fixed;
   z-index: 1;
@@ -35,10 +34,7 @@
   }
 }
 .style {
-  // color: $colordetails2;
-  // color: $textTitle;
   &:hover {
-    // color: $colordetails;
     color: $colorHover;
   }
 }
@@ -47,17 +43,10 @@
   background-image: url(../images/wall.jpg);
   background-size: cover;
   background-position: top;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  position: relative;
-  // @media all and (min-width: 1200px) {
-  //   background-image: url(../images/wall.jpg);
-  //   // background-size: contain;
-  //   // background-repeat: no-repeat;
-  //   // background-color: blanchedalmond;
-  // }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__title {
     color: black;
@@ -65,55 +54,18 @@
     font-size: 110px;
     font-weight: 900;
     width: 320px;
-    position: absolute;
     line-height: 1.31;
     text-transform: uppercase;
     text-shadow: 0 2px 3px rgba(77, 48, 48, 0.7);
-    bottom: 25%;
-    // animation-name: __title;
-    // animation-duration: 6s;
-    // animation-iteration-count: 1;
-    // @keyframes __title {
-    //   from {
-    //     opacity: 0;
-    //     transform: translateY(-150px);
-    //   }
-    //   to {
-    //     opacity: 1;
-    //     transform: translateY(0px);
-    //   }
-    // }
     @media all and (min-width: 768px) {
-      // font-size: 80px;
       font-size: 240px;
       line-height: 1.33;
       width: 600px;
-      bottom: 15%;
     }
     @media all and (min-width: 1200px) {
-      // font-size: 77px;
-      font-size: 260px;
+      font-size: 250px;
       line-height: 1.32;
       text-shadow: 0 2px 5px $colorshadow;
-      bottom: -4%;
-
-      // top: 110px;
-      // top: 18%;
-      // right: 35%;
-      // width: 200px;
-
-      // transform: translate(40%, -25%);
-
-      // @keyframes __title {
-      //   from {
-      //     opacity: 0;
-      //     transform: translate(40%, -60%);
-      //   }
-      //   to {
-      //     opacity: 1;
-      //     transform: translate(40%, -25%);
-      //   }
-      // }
     }
   }
 }

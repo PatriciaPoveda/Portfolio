@@ -1,6 +1,5 @@
 .aboutMe {
   position: relative;
-  // color: $colorPrimary1;
   color: $colorPrimary;
   padding: 30px 15px 45px 15px;
   @media all and (min-width: 768px) {
@@ -24,13 +23,11 @@
     font-family: $fontText;
     @media all and (min-width: 768px) {
       text-align: left;
-      // max-width: 95%;
     }
     @media all and (min-width: 1200px) {
       max-width: 60%;
     }
     &--title {
-      // font-family: $fontTitle;
       font-size: 24px;
       line-height: 1.25;
       text-transform: capitalize;
@@ -61,10 +58,6 @@
         margin-top: 30px;
         font-size: 18px;
         line-height: 1.5;
-        // width: 625px;
-      }
-      @media all and (min-width: 1200px) {
-        // width: 790px;
       }
     }
   }
@@ -76,22 +69,20 @@
 .moreAboutMe {
   font-family: $fontText;
   font-size: 17px;
+  font-weight: 600;
   text-align: justify;
   margin-top: 20px;
-  // color: $colorPrimary1;
-  // background-color: $colordetails2;
   background-color: $textPrimary;
   padding: 20px;
   border-radius: 10px;
-  // border: solid 1px $colorSecundary1;
   @media all and (min-width: 1200px) {
     margin: 91px 15px 0 100px;
-    height: 370px;
-    // width: 800px;
+    height: 420px;
+    text-align: center;
   }
   &__section--title {
-    // margin: 5px 0;
-    font-size: 15px;
+    margin-top: -10px;
+    font-size: 18px;
   }
   .moreAboutMe__sectionWrapper {
     display: flex;
@@ -103,7 +94,7 @@
     }
     @media all and (min-width: 1200px) {
       flex-wrap: wrap;
-      width: 270px;
+      width: 300px;
     }
   }
 }
