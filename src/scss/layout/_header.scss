@@ -47,7 +47,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   &__title {
     color: black;
     font-family: $fontTitle;
@@ -57,13 +56,13 @@
     line-height: 1.31;
     text-transform: uppercase;
     text-shadow: 0 2px 3px rgba(77, 48, 48, 0.7);
+    transform: rotate(-7deg);
     @media all and (min-width: 768px) {
       font-size: 240px;
       line-height: 1.33;
       width: 600px;
     }
     @media all and (min-width: 1200px) {
-      font-size: 250px;
       line-height: 1.32;
       text-shadow: 0 2px 5px $colorshadow;
     }
