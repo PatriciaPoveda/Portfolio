@@ -2,7 +2,6 @@
   position: relative;
   background-color: $colorSecundary;
   text-align: center;
-  font-family: $fontText;
   display: flex;
   justify-content: center;
   .projectSpan {
@@ -27,16 +26,16 @@
       grid-template-rows: 50px 500px 50px 500px;
     }
     &__title {
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 1.25;
       text-transform: uppercase;
       grid-column: 1 / 7;
       @media all and (min-width: 768px) {
-        font-size: 26px;
+        font-size: 1.625rem;
         line-height: 1.73;
       }
       @media all and (min-width: 1200px) {
-        font-size: 32px;
+        font-size: 2rem;
         line-height: 1.41;
       }
     }
@@ -112,12 +111,12 @@
         }
       }
       &--text {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 1.67;
         color: $colorHover;
         font-weight: 600;
         @media all and (min-width: 768px) {
-          font-size: 20px;
+          font-size: 1.25rem;
           line-height: 1.5;
         }
       }
@@ -134,7 +133,7 @@
   border: none;
   border-radius: 25px;
   background-color: $colorCart;
-  font-size: 18px;
+  font-size: 1.125rem;
   &:hover {
     background-color: $colorHover;
   }

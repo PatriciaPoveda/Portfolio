@@ -1,18 +1,37 @@
 <aside class="games">
-  <h3 class="title">Adivina el número</h3>
-  <form action="" class="game">
-    <label for="number" class="game__title">Introduce aquí el número:</label>
-    <input
-      id="number"
-      class="game__number js-number"
-      type="text"
-      placeholder="Ej: 15"
-    />
-    <div class="game__btnWrapper">
-      <input class="game__btn js-btn" type="button" value="Prueba" />
-      <input class="game__btnReset js-btn-reset" type="button" value="Reset" />
-    </div>
-  </form>
-  <p class="gameText js-clue">Pista: Escribe el número y dale a Prueba</p>
-  <p class="gameText js-attempts">Número de intentos: 0</p>
+  <p class="games__info">Te invito a que pruebes un juego que he hecho:</p>
+  <div class="gessNumber">
+    <h3 class="gessNumberTitle">Adivina el número</h3>
+    <form action="" class="gessNumberForm">
+      <label for="number" class="gessNumberForm__title"
+        >Introduce un número entre el 1 y el 100:</label
+      >
+      <input
+        id="number"
+        class="gessNumberForm__number js-number"
+        type="text"
+        placeholder="Ej: 15"
+      />
+      <div class="gessNumberForm__wrapper">
+        <input
+          class="gessNumberForm__wrapper--btn js-btn"
+          type="button"
+          value="Prueba"
+        />
+        <input
+          class="gessNumberForm__wrapper--btnReset js-btn-reset"
+          type="button"
+          value="Reset"
+        />
+      </div>
+    </form>
+    <p class="gessNumberText js-clue">Escribe el número y dale a Prueba</p>
+    <p class="gessNumberText js-attempts">Número de intentos: 0</p>
+    <a
+      href="https://github.com/PatriciaPoveda/modulo-2-evaluacion-intermedia-PatriciaPoveda"
+      class="project-btn"
+      target="_blank"
+      >Code</a
+    >
+  </div>
 </aside>

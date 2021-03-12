@@ -2,9 +2,8 @@
   background-color: $colorPrimary;
   text-align: center;
   text-transform: uppercase;
-  font-family: $fontText;
   &-text {
-    font-size: 25px;
+    font-size: 1.563rem;
     padding: 20px 15px 20px 15px;
   }
   &-wrapper {
@@ -21,18 +20,18 @@
     &__list {
       padding-top: 20px;
       padding-bottom: 30px;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 1.88;
 
       list-style-type: none;
       @media all and (min-width: 768px) {
-        font-size: 20px;
+        font-size: 1.25rem;
       }
       &--item {
         transition: all ease 0.3s;
         text-decoration: none;
         &:hover {
-          font-size: 18px;
+          font-size: 1.125rem;
           font-weight: 500;
           color: $colorHover;
         }
@@ -40,7 +39,7 @@
     }
     &__copy {
       padding-top: 20px;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 2.14;
       @media all and (min-width: 768px) {
         order: 2;
