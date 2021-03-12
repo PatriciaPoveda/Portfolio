@@ -40,6 +40,11 @@
             format("svg");
       } ;
     </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -354,6 +359,44 @@
         </section>
 
       </main>
+
+      <aside class="games">
+        <p class="games__info">Te invito a que pruebes un juego que he hecho:</p>
+        <div class="gessNumber">
+          <h3 class="gessNumberTitle">Adivina el número</h3>
+          <form action="" class="gessNumberForm">
+            <label for="number" class="gessNumberForm__title"
+              >Introduce un número entre el 1 y el 100:</label
+            >
+            <input
+              id="number"
+              class="gessNumberForm__number js-number"
+              type="text"
+              placeholder="Ej: 15"
+            />
+            <div class="gessNumberForm__wrapper">
+              <input
+                class="gessNumberForm__wrapper--btn js-btn"
+                type="button"
+                value="Prueba"
+              />
+              <input
+                class="gessNumberForm__wrapper--btnReset js-btn-reset"
+                type="button"
+                value="Reset"
+              />
+            </div>
+          </form>
+          <p class="gessNumberText js-clue">Escribe el número y dale a Prueba</p>
+          <p class="gessNumberText js-attempts">Número de intentos: 0</p>
+          <a
+            href="https://github.com/PatriciaPoveda/modulo-2-evaluacion-intermedia-PatriciaPoveda"
+            class="project-btn"
+            target="_blank"
+            >Code</a
+          >
+        </div>
+      </aside>
 
       <footer class="menu" id="contact">
         <p class="menu-text">Información de contacto</p>
