@@ -13,10 +13,7 @@
   }
   .about {
     position: absolute;
-    top: -44px;
-    @media all and (min-width: 768px) {
-      top: -59px;
-    }
+    top: -59px;
   }
   &__article {
     text-align: center;

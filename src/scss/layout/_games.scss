@@ -1,4 +1,5 @@
 .games {
+  position: relative;
   color: $colorPrimary;
   margin: 20px 0;
   &__info {
@@ -7,6 +8,10 @@
     color: $colorCart;
     margin: 20px;
     font-weight: 700;
+  }
+  .gamesSpan {
+    position: absolute;
+    top: -80px;
   }
 }
 .gessNumber {

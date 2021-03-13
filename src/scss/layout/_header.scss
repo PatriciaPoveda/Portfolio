@@ -1,22 +1,18 @@
 .bar {
-  height: 45px;
+  height: 60px;
   width: 100%;
-  background-color: $colorPrimary;
+  background-color: rgba(32, 53, 114, 0.8);
   position: fixed;
   z-index: 1;
   top: 0;
-  opacity: 0.8;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   @media all and (min-width: 768px) {
     justify-content: space-between;
-    height: 60px;
   }
   &__nav {
     &--list {
-      display: flex;
-      justify-content: space-around;
-      font-size: 1.063rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
       list-style-type: none;
       font-weight: 600;
@@ -27,14 +23,64 @@
   }
 }
 .item {
-  margin: 15px 6px 20px 6px;
+  margin: 15px 6px 15px 15px;
   @media all and (min-width: 768px) {
     margin: 15px 12px 20px 12px;
   }
 }
+
 .style {
-  &:hover {
-    color: $colorHover;
+  @media all and (min-width: 1200px) {
+    &:hover {
+      color: $colorHover;
+    }
+  }
+}
+.hidden {
+  display: none;
+}
+
+.hero-header-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $colorPrimary;
+  border: $textPrimary solid 2px;
+  width: 60px;
+  height: 60px;
+  outline: 0;
+  transition: background-color ease 0.3s;
+  @media all and (min-width: 768px) {
+    height: 59px;
+    width: 59px;
+  }
+  @media all and (min-width: 1200px) {
+    &:hover {
+      background-color: $colorHover;
+    }
+  }
+}
+.navToggle {
+  width: 100vw;
+  height: 180px;
+  background-color: rgba(32, 53, 114, 1);
+  position: absolute;
+  right: 0;
+  top: 60px;
+
+  &__list {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-weight: 600;
+    @media all and (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+    &--item {
+      margin-bottom: 10px;
+    }
   }
 }
 .hero {
@@ -49,9 +95,9 @@
   &__title {
     color: black;
     font-family: $fontTitle;
-    font-size: 110px;
+    font-size: 30vw;
     font-weight: 900;
-    width: 320px;
+    // width: 320px;
     line-height: 1.31;
     text-transform: uppercase;
     text-shadow: 0 2px 3px rgba(77, 48, 48, 0.7);

@@ -6,10 +6,7 @@
   justify-content: center;
   .projectSpan {
     position: absolute;
-    top: -44px;
-    @media all and (min-width: 768px) {
-      top: -59px;
-    }
+    top: -59px;
   }
   &-wrapper {
     display: grid;
