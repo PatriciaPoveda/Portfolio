@@ -1,6 +1,6 @@
 .bar {
   height: 60px;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(32, 53, 114, 0.8);
   position: fixed;
   z-index: 1;
@@ -43,16 +43,13 @@
 .hero-header-menu {
   position: fixed;
   right: 0;
+  margin-left: auto;
   background-color: $colorPrimary;
   border: $textPrimary solid 2px;
   width: 60px;
   height: 60px;
   outline: 0;
   cursor: pointer;  
-  @media all and (min-width: 768px) {
-    height: 59px;
-    width: 59px;
-  }
   @media all and (min-width: 1200px) {
     &:hover {
       background-color: $colorHover;
@@ -94,11 +91,9 @@
     
       @keyframes __menu {
         from {
-          // z-index: -120;
           transform: translatex(200px);
         }
         to {
-          // z-index: 2;
           transform: translatex(0px);
         }
       }
@@ -106,16 +101,14 @@
 }
 .close{
   animation-name: __close;
-  animation-duration: 0.2s;
+  animation-duration: 0.3s;
   animation-iteration-count: 1;
     
       @keyframes __close {
         from {
-          // z-index: -120;
           transform: translatex(0px);
         }
         to {
-          // z-index: 2;
           transform: translatex(300px);
         }
       }
@@ -131,11 +124,11 @@
   justify-content: center;
   align-items: center;
   &__title {
+    max-width: 70vw;
     color: black;
     font-family: $fontTitle;
     font-size: 30vw;
     font-weight: 900;
-    // width: 320px;
     line-height: 1.31;
     text-transform: uppercase;
     text-shadow: 0 2px 3px rgba(77, 48, 48, 0.7);
