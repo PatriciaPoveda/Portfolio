@@ -37,19 +37,18 @@
   }
 }
 .hidden {
-  display: none;
+  transform: translateX(200px);
 }
 
 .hero-header-menu {
   position: fixed;
-  top: 0;
   right: 0;
   background-color: $colorPrimary;
   border: $textPrimary solid 2px;
   width: 60px;
   height: 60px;
   outline: 0;
-  transition: background-color ease 0.3s;
+  cursor: pointer;  
   @media all and (min-width: 768px) {
     height: 59px;
     width: 59px;
@@ -60,16 +59,20 @@
     }
   }
 }
+.navToggleTitle{
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
 .navToggle {
-  width: 100vw;
-  height: 180px;
   background-color: rgba(32, 53, 114, 1);
   position: absolute;
   right: 0;
   top: 60px;
-
+  margin-right: 10px;
+  box-shadow: 0 8px 9px rgba(77, 48, 48, 170% );
   &__list {
-    margin-top: 30px;
     text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -79,10 +82,45 @@
       font-size: 1.5rem;
     }
     &--item {
-      margin-bottom: 10px;
+      margin: 20px;
+      border-bottom: rgb(209, 208, 207) 1px solid;
     }
   }
 }
+.open{
+  animation-name: __menu;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+    
+      @keyframes __menu {
+        from {
+          // z-index: -120;
+          transform: translatex(200px);
+        }
+        to {
+          // z-index: 2;
+          transform: translatex(0px);
+        }
+      }
+ 
+}
+.close{
+  animation-name: __close;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+    
+      @keyframes __close {
+        from {
+          // z-index: -120;
+          transform: translatex(0px);
+        }
+        to {
+          // z-index: 2;
+          transform: translatex(300px);
+        }
+      }
+}
+
 .hero {
   height: 100vh;
   background-image: url(../images/wall.jpg);
