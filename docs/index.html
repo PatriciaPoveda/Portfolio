@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>Mi Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -45,6 +45,12 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -52,16 +58,17 @@
       <header id="top">
         <div class="bar">
           <nav class="bar__nav js-bar__nav" >
+           
             <ul class="bar__nav--list">
-              <li class="item "><a href="#contact" class="style"> Contacto</a></li>
-            </ul>
+              <li class="item"><a href="#contact" class="style__contact">Contactame</a></li>
+            </ul> 
           </nav>
           <nav class="navToggle hidden js-nav">
             <h2 class="navToggleTitle js-navToggleTitle">Menu</h2>
             <ul class="navToggle__list js-link">
-              <li class="navToggle__list--item"><a href="#about" class="style"> Sobre mi</a></li>
-              <li class="navToggle__list--item"><a href="#project" class="style">Proyectos </a></li>
-              <li class="navToggle__list--item"><a href="#games" class="style">Juega </a></li>
+              <li class="navToggle__list--item"><a href="#about" class="style"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sobre mi</a></li>
+              <li class="navToggle__list--item"><a href="#project" class="style"><i class="fa fa-code" aria-hidden="true"></i>Proyectos </a></li>
+              <li class="navToggle__list--item"><a href="#games" class="style"><i class="fa fa-play" aria-hidden="true"></i>Juega </a></li>
             </ul>
           </nav>
           <button class="hero-header-menu js-btnMenu" type="button" title="Ir a Menu">
@@ -410,14 +417,18 @@
         <div class="menu-wrapper">
           <nav>
             <ul class="menu-wrapper__list">
-              <li>
+              <!-- <li>
                 <a
                   href="mailto:patriciapovedaboto@gmail.com"
                   class="menu-wrapper__list--item"
                   target="_blank"
-                  title="Enviar e-mail"
-                  >e-mail
+                  title="patriciapovedaboto@gmail.com"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i>email
                 </a>
+              </li> -->
+              <li class="menu-wrapper__list--email">
+                <i class="fa fa-envelope" aria-hidden="true"></i
+                >patriciapovedaboto@gmail.com
               </li>
             </ul>
           </nav>
@@ -429,7 +440,7 @@
                   class="menu-wrapper__list--item"
                   title="Ir a Github"
                   target="_blank"
-                  >GitHub</a
+                  ><i class="fa fa-github" aria-hidden="true"></i>GitHub</a
                 >
               </li>
               <li>
@@ -438,7 +449,7 @@
                   class="menu-wrapper__list--item"
                   title="Ir a Linkedin"
                   target="_blank"
-                  >Linkedin</a
+                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin</a
                 >
               </li>
               <li>
@@ -447,14 +458,14 @@
                   class="menu-wrapper__list--item"
                   title="Ir a Twitter"
                   target="_blank"
-                  >Twitter</a
+                  ><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a
                 >
               </li>
             </ul>
           </nav>
           <small class="menu-wrapper__copy">
-            <a href="#top" class="menu-wrapper__list--item" title="Ir a inicio"
-              >Ir a Inicio</a
+            <a href="#top" class="menu-wrapper__copy--home" title="Ir a inicio"
+              ><i class="fa fa-university" aria-hidden="true"></i>Inicio</a
             >
             <span class="menu-wrapper__copy--item">&copy;2021</span>
             <!-- <span class="menu-wrapper__copy--item"
@@ -462,6 +473,7 @@
               <span class="menu-wrapper__copy--heart">&#10084;</span>
               components</span
             > -->
+            <span class="menu-wrapper__copy--message">Contad conmigo PARA TODO</span>
           </small>
         </div>
       </footer>
