@@ -7,13 +7,14 @@
   top: 0;
   display: flex;
   justify-content: left;
+  align-items: center;
   @media all and (min-width: 768px) {
     justify-content: space-between;
   }
   &__nav {
     &--list {
-      font-size: 1.5rem;
-      text-transform: uppercase;
+      font-size: 1.2rem;
+      text-transform: capitalize;
       list-style-type: none;
       font-weight: 600;
       @media all and (min-width: 768px) {
@@ -29,6 +30,13 @@
   }
 }
 
+.style__contact {
+  @media all and (min-width: 1200px) {
+    &:active {
+      color: $colorHover;
+    }
+  }
+}
 .style {
   @media all and (min-width: 1200px) {
     &:hover {
@@ -37,38 +45,40 @@
   }
 }
 .hidden {
-  transform: translateX(200px);
+  transform: translateX(240px);
 }
 
 .hero-header-menu {
   position: fixed;
   right: 0;
   margin-left: auto;
-  background-color: $colorPrimary;
-  border: $textPrimary solid 2px;
-  width: 60px;
-  height: 60px;
+  margin-right: 15px;
+  background-color: rgba(32, 53, 114, 0);
+  width: 40px;
+  height: 40px;
   outline: 0;
-  cursor: pointer;  
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
   @media all and (min-width: 1200px) {
-    &:hover {
+    &:active {
       background-color: $colorHover;
     }
   }
 }
-.navToggleTitle{
+.navToggleTitle {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   margin-top: 10px;
 }
 .navToggle {
   background-color: rgba(32, 53, 114, 1);
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 60px;
   margin-right: 10px;
-  box-shadow: 0 8px 9px rgba(77, 48, 48, 170% );
+  box-shadow: 0 8px 9px rgba(77, 48, 48, 170%);
   &__list {
     text-align: center;
     font-size: 1.5rem;
@@ -84,34 +94,33 @@
     }
   }
 }
-.open{
+.open {
   animation-name: __menu;
   animation-duration: 0.2s;
   animation-iteration-count: 1;
-    
-      @keyframes __menu {
-        from {
-          transform: translatex(200px);
-        }
-        to {
-          transform: translatex(0px);
-        }
-      }
- 
+
+  @keyframes __menu {
+    from {
+      transform: translatex(200px);
+    }
+    to {
+      transform: translatex(0px);
+    }
+  }
 }
-.close{
+.close {
   animation-name: __close;
   animation-duration: 0.3s;
   animation-iteration-count: 1;
-    
-      @keyframes __close {
-        from {
-          transform: translatex(0px);
-        }
-        to {
-          transform: translatex(300px);
-        }
-      }
+
+  @keyframes __close {
+    from {
+      transform: translatex(0px);
+    }
+    to {
+      transform: translatex(300px);
+    }
+  }
 }
 
 .hero {

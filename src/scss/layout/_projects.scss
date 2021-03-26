@@ -139,6 +139,8 @@
   background-color: $colorCart;
   font-size: 1.125rem;
   &:hover {
-    background-color: $colorHover;
+    @media all and (min-width: 1200px) {
+      background-color: $colorHover;
+    }
   }
 }
