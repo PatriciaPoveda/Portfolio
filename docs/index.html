@@ -24,6 +24,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <style type="text/css" media="screen, print">
       @font-face {
         font-family: "Dirtgrub Graffiti";
@@ -55,38 +59,94 @@
 
   <body>
     <div class="js-page">
-      <header id="top">
+      <header id="top" class="top">
+        <button class="hero-header-menu js-btnMenu" type="button" title="Ir a Menu">
+          <img class="header__button" src="./assets/images/ico-menu.svg" alt="Menu" />
+          <!-- <i class="fa fa-bars header__button" aria-hidden="true"></i> -->
+        </button>
+        <nav class="navToggle hidden js-nav">
+          <h2 class="navToggleTitle js-navToggleTitle">Menu</h2>
+          <ul class="navToggle__list js-link">
+            <li class="navToggle__list--item">
+              <a href="#top" class="style"
+                ><i class="fa fa-university" aria-hidden="true"></i>Inicio</a
+              >
+            </li>
+            <li class="navToggle__list--item">
+              <a href="#about" class="style"
+                ><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sobre mi</a
+              >
+            </li>
+            <li class="navToggle__list--item">
+              <a href="#project" class="style"
+                ><i class="fa fa-code" aria-hidden="true"></i>Proyectos
+              </a>
+            </li>
+            <li class="navToggle__list--item">
+              <a href="#games" class="style"
+                ><i class="fa fa-play" aria-hidden="true"></i>Juega
+              </a>
+            </li>
+          </ul>
+        </nav>
         <div class="bar">
-          <nav class="bar__nav js-bar__nav" >
-           
+          <nav class="bar__nav js-bar__nav">
             <ul class="bar__nav--list">
-              <li class="item"><a href="#contact" class="style__contact">Contactame</a></li>
-            </ul> 
-          </nav>
-          <nav class="navToggle hidden js-nav">
-            <h2 class="navToggleTitle js-navToggleTitle">Menu</h2>
-            <ul class="navToggle__list js-link">
-              <li class="navToggle__list--item"><a href="#about" class="style"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sobre mi</a></li>
-              <li class="navToggle__list--item"><a href="#project" class="style"><i class="fa fa-code" aria-hidden="true"></i>Proyectos </a></li>
-              <li class="navToggle__list--item"><a href="#games" class="style"><i class="fa fa-play" aria-hidden="true"></i>Juega </a></li>
+              <li>
+                <a
+                  href="https://github.com/PatriciaPoveda"
+                  class="bar__nav--listItem"
+                  title="Ir a Github"
+                  target="_blank"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/patriciapovedaboto/"
+                  class="bar__nav--listItem"
+                  title="Ir a Linkedin"
+                  target="_blank"
+                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/PatukaPoveda"
+                  class="bar__nav--listItem"
+                  title="Ir a Twitter"
+                  target="_blank"
+                  ><i class="fa fa-twitter-square" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="bar__nav--listItem">
+                <a href="mailto:patriciapovedaboto@gmail.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i
+                ></a>
+              </li>
             </ul>
           </nav>
-          <button class="hero-header-menu js-btnMenu" type="button" title="Ir a Menu">
-              <img src="./assets/images/ico-menu.svg" alt="Menu"
-            /></a>
-          </button>
         </div>
         <div class="hero">
-          <div class="hero__title">
-            <span>Patricia</span>
-            <span class="hero__title--span">Poveda</span>
+          <h1 class="hero__title animate__animated animate__fadeInDown">
+            Patricia Poveda
+          </h1>
+          <h4 class="hero__subTitle animate__animated animate__fadeInLeft">
+            Frontend developer
+          </h4>
+          <div class="hero__wrapper">
+            <h3 class="hero__wrapper--title">¡Hola mundo!</h3>
+            <img
+              class="hero__wrapper--img animate__animated animate__wobble"
+              src="./assets/images/hola.png"
+              alt=""
+            />
           </div>
         </div>
       </header>
 
       <main>
-        <section class="aboutMe">
-          <span id="about" class="about"></span>
+        <section class="aboutMe" id="about">
           <article class="aboutMe__article">
             <h3 class="aboutMe__article--title">¿Quién soy yo?</h3>
             <div class="aboutMe__article-wrapper">
@@ -264,8 +324,7 @@
 
         </section>
 
-        <section class="project">
-          <span id="project" class="projectSpan"></span>
+        <section class="project" id="project">
           <div class="project-wrapper">
             <h3 class="project-wrapper__title">Proyectos conjuntos</h3>
             <article class="project-wrapper__article item1">
@@ -373,8 +432,7 @@
 
       </main>
 
-      <aside class="games">
-        <span id="games" class="gamesSpan"></span>
+      <aside class="games" id="games">
         <p class="games__info">Te invito a que pruebes un juego que he hecho:</p>
         <div class="gessNumber">
           <h3 class="gessNumberTitle">Adivina el número</h3>
@@ -413,59 +471,18 @@
       </aside>
 
       <footer class="menu">
-        <span id="contact" class="contactSpan"></span>
-        <p class="menu-text">Información de contacto</p>
         <div class="menu-wrapper">
-          <nav>
-            <ul class="menu-wrapper__list">
-              <li class="menu-wrapper__list--email">
-                <i class="fa fa-envelope" aria-hidden="true"></i
-                >patriciapovedaboto@gmail.com
-              </li>
-            </ul>
-          </nav>
-          <nav>
-            <ul class="menu-wrapper__list">
-              <li>
-                <a
-                  href="https://github.com/PatriciaPoveda"
-                  class="menu-wrapper__list--item"
-                  title="Ir a Github"
-                  target="_blank"
-                  ><i class="fa fa-github" aria-hidden="true"></i>GitHub</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/patriciapovedaboto/"
-                  class="menu-wrapper__list--item"
-                  title="Ir a Linkedin"
-                  target="_blank"
-                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/PatukaPoveda"
-                  class="menu-wrapper__list--item"
-                  title="Ir a Twitter"
-                  target="_blank"
-                  ><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a
-                >
-              </li>
-            </ul>
-          </nav>
           <small class="menu-wrapper__copy">
             <a href="#top" class="menu-wrapper__copy--home" title="Ir a inicio"
               ><i class="fa fa-university" aria-hidden="true"></i>Inicio</a
             >
+            <span class="menu-wrapper__copy--message">Contad conmigo PARA TODO</span>
             <span class="menu-wrapper__copy--item">&copy;2021</span>
             <!-- <span class="menu-wrapper__copy--item"
               >we
               <span class="menu-wrapper__copy--heart">&#10084;</span>
               components</span
             > -->
-            <span class="menu-wrapper__copy--message">Contad conmigo PARA TODO</span>
           </small>
         </div>
       </footer>
