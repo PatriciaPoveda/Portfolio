@@ -1,10 +1,10 @@
 .bar {
-  height: 60px;
+  height: 40px;
   width: 100vw;
   background-color: rgba(32, 53, 114, 0.9);
   position: fixed;
   z-index: 1;
-  top: 0;
+  bottom: 0;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -13,12 +13,23 @@
   }
   &__nav {
     &--list {
-      font-size: 1.2rem;
-      text-transform: capitalize;
+      font-size: 1.5rem;
       list-style-type: none;
-      font-weight: 600;
+      display: flex;
+      margin-left: 2vw;
       @media all and (min-width: 768px) {
         font-size: 1.5rem;
+      }
+    }
+    &--listItem {
+      margin: 0 5px;
+      transition: all ease 0.3s;
+      @media all and (min-width: 1200px) {
+        &:hover {
+          font-size: 1.125rem;
+          font-weight: 500;
+          color: $colorHover;
+        }
       }
     }
   }
@@ -45,20 +56,20 @@
   }
 }
 .hidden {
-  transform: translateX(240px);
+  display: none;
 }
 
 .hero-header-menu {
   position: fixed;
   right: 0;
-  margin-left: auto;
-  margin-right: 15px;
-  background-color: rgba(32, 53, 114, 0);
+  margin: 10px 10px 0 auto;
+  background-color: rgba(32, 53, 114, 1);
   width: 40px;
   height: 40px;
   outline: 0;
   border: 0;
   border-radius: 100px;
+  z-index: 2;
   cursor: pointer;
   @media all and (min-width: 1200px) {
     &:active {
@@ -70,14 +81,12 @@
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
-  margin-top: 10px;
 }
 .navToggle {
   background-color: rgba(32, 53, 114, 1);
-  position: absolute;
-  right: 0px;
-  top: 60px;
-  margin-right: 10px;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
   box-shadow: 0 8px 9px rgba(77, 48, 48, 170%);
   &__list {
     text-align: center;
@@ -94,62 +103,36 @@
     }
   }
 }
-.open {
-  animation-name: __menu;
-  animation-duration: 0.2s;
-  animation-iteration-count: 1;
-
-  @keyframes __menu {
-    from {
-      transform: translatex(200px);
-    }
-    to {
-      transform: translatex(0px);
-    }
-  }
-}
-.close {
-  animation-name: __close;
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-
-  @keyframes __close {
-    from {
-      transform: translatex(0px);
-    }
-    to {
-      transform: translatex(300px);
-    }
-  }
-}
-
 .hero {
   height: 100vh;
-  background-image: url(../images/wall.jpg);
-  background-size: cover;
-  background-position: top;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-left: 7vw;
+  color: #121d40;
+
   &__title {
-    max-width: 70vw;
-    color: black;
-    font-family: $fontTitle;
-    font-size: 30vw;
-    font-weight: 900;
-    line-height: 1.31;
-    text-transform: uppercase;
-    text-shadow: 0 2px 3px rgba(77, 48, 48, 0.7);
-    transform: rotate(-7deg);
-    @media all and (min-width: 768px) {
-      font-size: 240px;
-      line-height: 1.33;
-      width: 600px;
-    }
+    font-size: 12vw;
     @media all and (min-width: 1200px) {
-      line-height: 1.32;
-      text-shadow: 0 2px 5px $colorshadow;
+      font-size: 10vw;
+    }
+  }
+  &__subTitle {
+    font-size: 5vw;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    &--title {
+      width: 80vw;
+      font-size: 3rem;
+    }
+    &--img {
+      width: 150px;
     }
   }
 }

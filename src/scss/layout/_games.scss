@@ -1,17 +1,13 @@
 .games {
   position: relative;
   color: $colorPrimary;
-  margin: 20px 0;
+  padding: 30px 0;
   &__info {
     font-size: 26px;
     text-align: center;
     color: $colorCart;
     margin: 20px;
     font-weight: 700;
-  }
-  .gamesSpan {
-    position: absolute;
-    top: -80px;
   }
 }
 .gessNumber {

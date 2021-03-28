@@ -1,9 +1,4 @@
-.contactSpan {
-  position: absolute;
-  top: -59px;
-}
 .menu {
-  position: relative;
   background-color: $colorPrimary;
   text-align: center;
   text-transform: uppercase;
@@ -17,42 +12,14 @@
     align-items: center;
     padding: 18px 0 45px 0;
     @media all and (min-width: 768px) {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start;
-      padding: 8px 39px 15px 19px;
+      padding: 8px 0 64px 0;
     }
-    &__list {
-      padding-top: 20px;
-      padding-bottom: 30px;
-      font-size: 1.25rem;
-      line-height: 1.88;
-      text-align: start;
-      list-style-type: none;
-      &--item {
-        transition: all ease 0.3s;
-        @media all and (min-width: 1200px) {
-          &:hover {
-            font-size: 1.125rem;
-            font-weight: 500;
-            color: $colorHover;
-          }
-        }
-      }
-      &--email {
-        font-size: 1.1rem;
-        text-transform: lowercase;
-        display: inline-flex;
-        line-height: 1;
-      }
-    }
+
     &__copy {
-      padding-top: 20px;
+      padding-top: 40px;
       font-size: 1.125rem;
       line-height: 2.14;
-      @media all and (min-width: 768px) {
-        order: 2;
-      }
+      padding-bottom: 20px;
       &--home {
         @media all and (min-width: 1200px) {
           &:active {
@@ -64,7 +31,9 @@
         display: block;
       }
       &--message {
+        margin-top: 25px;
         text-transform: capitalize;
+        display: block;
       }
       // &--heart {
       //   color: red;

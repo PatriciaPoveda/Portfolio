@@ -1,28 +1,85 @@
-<header id="top">
+<header id="top" class="top">
+  <button class="hero-header-menu js-btnMenu" type="button" title="Ir a Menu">
+    <img class="header__button" src="./assets/images/ico-menu.svg" alt="Menu" />
+    <!-- <i class="fa fa-bars header__button" aria-hidden="true"></i> -->
+  </button>
+  <nav class="navToggle hidden js-nav">
+    <h2 class="navToggleTitle js-navToggleTitle">Menu</h2>
+    <ul class="navToggle__list js-link">
+      <li class="navToggle__list--item">
+        <a href="#top" class="style"
+          ><i class="fa fa-university" aria-hidden="true"></i>Inicio</a
+        >
+      </li>
+      <li class="navToggle__list--item">
+        <a href="#about" class="style"
+          ><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sobre mi</a
+        >
+      </li>
+      <li class="navToggle__list--item">
+        <a href="#project" class="style"
+          ><i class="fa fa-code" aria-hidden="true"></i>Proyectos
+        </a>
+      </li>
+      <li class="navToggle__list--item">
+        <a href="#games" class="style"
+          ><i class="fa fa-play" aria-hidden="true"></i>Juega
+        </a>
+      </li>
+    </ul>
+  </nav>
   <div class="bar">
-    <nav class="bar__nav js-bar__nav" >
-     
+    <nav class="bar__nav js-bar__nav">
       <ul class="bar__nav--list">
-        <li class="item"><a href="#contact" class="style__contact">Contactame</a></li>
-      </ul> 
-    </nav>
-    <nav class="navToggle hidden js-nav">
-      <h2 class="navToggleTitle js-navToggleTitle">Menu</h2>
-      <ul class="navToggle__list js-link">
-        <li class="navToggle__list--item"><a href="#about" class="style"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sobre mi</a></li>
-        <li class="navToggle__list--item"><a href="#project" class="style"><i class="fa fa-code" aria-hidden="true"></i>Proyectos </a></li>
-        <li class="navToggle__list--item"><a href="#games" class="style"><i class="fa fa-play" aria-hidden="true"></i>Juega </a></li>
+        <li>
+          <a
+            href="https://github.com/PatriciaPoveda"
+            class="bar__nav--listItem"
+            title="Ir a Github"
+            target="_blank"
+            ><i class="fa fa-github" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/patriciapovedaboto/"
+            class="bar__nav--listItem"
+            title="Ir a Linkedin"
+            target="_blank"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/PatukaPoveda"
+            class="bar__nav--listItem"
+            title="Ir a Twitter"
+            target="_blank"
+            ><i class="fa fa-twitter-square" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="bar__nav--listItem">
+          <a href="mailto:patriciapovedaboto@gmail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i
+          ></a>
+        </li>
       </ul>
     </nav>
-    <button class="hero-header-menu js-btnMenu" type="button" title="Ir a Menu">
-        <img src="./assets/images/ico-menu.svg" alt="Menu"
-      /></a>
-    </button>
   </div>
   <div class="hero">
-    <div class="hero__title">
-      <span>Patricia</span>
-      <span class="hero__title--span">Poveda</span>
+    <h1 class="hero__title animate__animated animate__fadeInDown">
+      Patricia Poveda
+    </h1>
+    <h4 class="hero__subTitle animate__animated animate__fadeInLeft">
+      Frontend developer
+    </h4>
+    <div class="hero__wrapper">
+      <h3 class="hero__wrapper--title">¡Hola mundo!</h3>
+      <img
+        class="hero__wrapper--img animate__animated animate__wobble"
+        src="./assets/images/hola.png"
+        alt=""
+      />
     </div>
   </div>
 </header>

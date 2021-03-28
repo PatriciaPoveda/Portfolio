@@ -4,10 +4,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  .projectSpan {
-    position: absolute;
-    top: -59px;
-  }
+  padding-top: 20px;
   &-wrapper {
     display: grid;
     grid-template-columns: 1fr;
