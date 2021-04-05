@@ -55,21 +55,25 @@
       integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
       crossorigin="anonymous"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="../scss/scss/magic.scss" /> -->
   </head>
 
   <body>
     <div class="js-page">
       <header id="top" class="top">
         <button class="hero-header-menu js-btnMenu" type="button" title="Ir a Menu">
-          <img class="header__button" src="./assets/images/ico-menu.svg" alt="Menu" />
-          <!-- <i class="fa fa-bars header__button" aria-hidden="true"></i> -->
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <nav class="navToggle hidden js-nav">
           <h2 class="navToggleTitle js-navToggleTitle">Menu</h2>
           <ul class="navToggle__list js-link">
             <li class="navToggle__list--item">
               <a href="#top" class="style"
-                ><i class="fa fa-university" aria-hidden="true"></i>Inicio</a
+                ><i class='bx bxs-home'></i>Inicio</a
               >
             </li>
             <li class="navToggle__list--item">
@@ -119,8 +123,11 @@
                   ><i class="fa fa-twitter-square" aria-hidden="true"></i
                 ></a>
               </li>
-              <li class="bar__nav--listItem">
-                <a href="mailto:patriciapovedaboto@gmail.com">
+              <li>
+                <a
+                  href="mailto:patriciapovedaboto@gmail.com"
+                  class="bar__nav--listItem"
+                >
                   <i class="fa fa-envelope" aria-hidden="true"></i
                 ></a>
               </li>
@@ -134,15 +141,15 @@
           <h4 class="hero__subTitle animate__animated animate__fadeInLeft">
             Frontend developer
           </h4>
-          <div class="hero__wrapper">
-            <h3 class="hero__wrapper--title">¡Hola mundo!</h3>
+          <!-- <div class="hero__wrapper">
             <img
               class="hero__wrapper--img animate__animated animate__wobble"
               src="./assets/images/hola.png"
               alt=""
             />
+            <h3 class="hero__wrapper--title">¡Hola mundo!</h3>
           </div>
-        </div>
+        </div> -->
       </header>
 
       <main>
@@ -181,145 +188,56 @@
                   tareas.
                 </p>
                 <p class="text">
-                  Ahora estoy en la búsqueda de mi primer trabajo como developer
-                  frontend y tengo muchas ganas no solo de demostrar toda mi capacidad
-                  de aprendizaje sino toda la ilusión y el esfuerzo que le puedo poner
-                  al trabajo.
+                  Ahora estoy en la búsqueda de mi primera oportunidad como
+                  <strong>frontend developer</strong> y tengo muchas ganas no solo de
+                  demostrar toda mi capacidad de aprendizaje sino toda la ilusión y el
+                  esfuerzo que le puedo poner al trabajo.
                 </p>
               </div>
             </div>
-            <cite>Audentes fortuna iuvat </cite>
+            <cite class="aboutMe__article--cite">Audentes fortuna iuvat </cite>
           </article>
           <aside class="moreAboutMe">
-            <!-- <h4 class="moreAboutMe__title">Otra información sobre mi</h4> -->
             <section class="moreAboutMe__section">
               <h5 class="moreAboutMe__section--title">Competencias</h5>
               <div class="moreAboutMe__sectionWrapper">
                 <div class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/png/030-html-5.png"
-                    alt="Logo de HTML"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
+                  <i alt="Logo de HTML" class="bx bxl-html5"></i>
                   <p class="moreAboutMe__sectionWrapper--artText">HTML 5</p>
                 </div>
 
                 <div class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/png/031-css.png"
-                    alt="Logo de CSS"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
+                  <i alt="Logo de CSS" class="bx bxl-css3"></i>
                   <p class="moreAboutMe__sectionWrapper--artText">CSS</p>
                 </div>
 
                 <div class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/png/026-sass.png"
-                    alt="Logo de Sass"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
+                  <i alt="Logo de Sass" class="bx bxl-sass"></i>
                   <p class="moreAboutMe__sectionWrapper--artText">Sass</p>
                 </div>
 
                 <div class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/png/029-javascript.png"
-                    alt="Logo de javaScript"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
+                  <i alt="Logo de javaScript" class="bx bxl-javascript"></i>
                   <p class="moreAboutMe__sectionWrapper--artText">javaScript</p>
                 </div>
 
                 <div class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/png/006-react.png"
-                    alt="Logo de React"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
+                  <i alt="Logo de React" class="bx bxl-react"></i>
                   <p class="moreAboutMe__sectionWrapper--artText">React</p>
                 </div>
 
                 <div class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/png/032-nodejs.png"
-                    alt="Logo de Node.js"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
+                  <i alt="Logo de Node.js" class="bx bxl-nodejs"></i>
                   <p class="moreAboutMe__sectionWrapper--artText">Node.JS</p>
                 </div>
 
                 <div class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/png/010-github.png"
-                    alt="Logo de GitHub"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
+                  <i alt="Logo de GitHub" class="bx bxl-git"></i>
                   <p class="moreAboutMe__sectionWrapper--artText">GitHub</p>
-                </div>
-
-                <div class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/png/gulp.png"
-                    alt="Logo de Gulp"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
-                  <p class="moreAboutMe__sectionWrapper--artText">Gulp</p>
                 </div>
 
               </div>
             </section>
-
-            <!-- <section>
-              <h5 class="moreAboutMe__section--title">Soft skills</h5>
-              <div class="moreAboutMe__sectionWrapper">
-                <article class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/softSkills/charla.png"
-                    alt="Imagen de una charla"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
-                  <p class="moreAboutMe__sectionWrapper--artText">Comunicación</p>
-                </article>
-
-                <article class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/softSkills/organizacion.png"
-                    alt="Imagen de una charla"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
-                  <p class="moreAboutMe__sectionWrapper--artText">Organización</p>
-                </article>
-
-                <article class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/softSkills/idea.png"
-                    alt="Imagen de una charla"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
-                  <p class="moreAboutMe__sectionWrapper--artText">Creatividad</p>
-                </article>
-
-                <article class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/softSkills/empatia.png"
-                    alt="Imagen de una charla"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
-                  <p class="moreAboutMe__sectionWrapper--artText">Empatía</p>
-                </article>
-
-                <article class="moreAboutMe__sectionWrapper--art">
-                  <img
-                    src="./assets/images/softSkills/optimismo.png"
-                    alt="Imagen de una charla"
-                    class="moreAboutMe__sectionWrapper--artImg"
-                  />
-                  <p class="moreAboutMe__sectionWrapper--artText">Optimismo</p>
-                </article>
-
-              </div>
-            </section> -->
           </aside>
 
         </section>
@@ -334,16 +252,12 @@
                 </div>
 
                 <h4 class="project-wrapper__article--title">Codeflix</h4>
-              </div>
-              <div>
                 <p class="project-wrapper__article--text">Web grupal responsive para presentar al equipo. Creada con HTML5, CSS3,
               Flexbox, Grid, SASS y Git para el control de versiones.</p>
-                <div class="project-wrapper__article--btn">
-                  <a href="https://patriciapoveda.github.io/Codeflix/" class="project-btn" target="_blank">Demo</a>
-                  <a href="https://github.com/PatriciaPoveda/Codeflix" target="_blank" class="project-btn"
-                    >Code
-                  </a>
-                </div>
+              </div>
+              <div class="project-wrapper__article--btn">
+                <a href="https://patriciapoveda.github.io/Codeflix/" class="project-btn" target="_blank">Demo</a>
+                <a href="https://github.com/PatriciaPoveda/Codeflix" target="_blank" class="project-btn">Code </a>
               </div>
             </article>
 
@@ -353,17 +267,13 @@
                   <img src="./assets/images/proyects/logoStarCodingLabs-Blue.png" alt="Logo de Star Coding Labs" class="project-wrapper__article--img" />
                 </div>
 
-                <h4 class="project-wrapper__article--title">Profile Card S.T.A.R Coding Labs</h4>
-              </div>
-              <div>
+                <h4 class="project-wrapper__article--title">Profile Card</h4>
                 <p class="project-wrapper__article--text">Web app que permite crear tarjetas de presentación de forma interactiva.
               Desarrollada con HTML5, CSS3 y JavaScript.</p>
-                <div class="project-wrapper__article--btn">
-                  <a href="https://patriciapoveda.github.io/Profile-Card-S.T.A.R-Coding-Labs/" class="project-btn" target="_blank">Demo</a>
-                  <a href="https://github.com/PatriciaPoveda/Profile-Card-S.T.A.R-Coding-Labs" target="_blank" class="project-btn"
-                    >Code
-                  </a>
-                </div>
+              </div>
+              <div class="project-wrapper__article--btn">
+                <a href="https://patriciapoveda.github.io/Profile-Card-S.T.A.R-Coding-Labs/" class="project-btn" target="_blank">Demo</a>
+                <a href="https://github.com/PatriciaPoveda/Profile-Card-S.T.A.R-Coding-Labs" target="_blank" class="project-btn">Code </a>
               </div>
             </article>
 
@@ -374,15 +284,11 @@
                 </div>
 
                 <h4 class="project-wrapper__article--title">Reservoir _Code</h4>
-              </div>
-              <div>
                 <p class="project-wrapper__article--text">Web basada en el proyecto (Profile-Card) programada con React y React Router.</p>
-                <div class="project-wrapper__article--btn">
-                  <a href="https://patriciapoveda.github.io/Reservoir-CODE/#/" class="project-btn" target="_blank">Demo</a>
-                  <a href="https://github.com/PatriciaPoveda/Reservoir-CODE" target="_blank" class="project-btn"
-                    >Code
-                  </a>
-                </div>
+              </div>
+              <div class="project-wrapper__article--btn">
+                <a href="https://patriciapoveda.github.io/Reservoir-CODE/#/" class="project-btn" target="_blank">Demo</a>
+                <a href="https://github.com/PatriciaPoveda/Reservoir-CODE" target="_blank" class="project-btn">Code </a>
               </div>
             </article>
 
@@ -394,16 +300,12 @@
                 </div>
 
                 <h4 class="project-wrapper__article--title">Buscador de series Codeflix</h4>
-              </div>
-              <div>
                 <p class="project-wrapper__article--text">Web que permite buscar series y guardarlas en favoritos. Desarrollada
               con HTML5, CSS3, Sass y JavaScript.</p>
-                <div class="project-wrapper__article--btn">
-                  <a href="https://patriciapoveda.github.io/Buscador-de-series-Codeflix/" class="project-btn" target="_blank">Demo</a>
-                  <a href="https://github.com/PatriciaPoveda/Buscador-de-series-Codeflix" target="_blank" class="project-btn"
-                    >Code
-                  </a>
-                </div>
+              </div>
+              <div class="project-wrapper__article--btn">
+                <a href="https://patriciapoveda.github.io/Buscador-de-series-Codeflix/" class="project-btn" target="_blank">Demo</a>
+                <a href="https://github.com/PatriciaPoveda/Buscador-de-series-Codeflix" target="_blank" class="project-btn">Code </a>
               </div>
             </article>
 
@@ -414,16 +316,12 @@
                 </div>
 
                 <h4 class="project-wrapper__article--title">Buscador de Rick and Morty</h4>
-              </div>
-              <div>
                 <p class="project-wrapper__article--text">Web responsive hecha con React y React Router que consiste en un listado
               de personajes que podemos filtrar por el nombre.</p>
-                <div class="project-wrapper__article--btn">
-                  <a href="https://patriciapoveda.github.io/Listado-de-personajes-de-Rick-and-Morty/" class="project-btn" target="_blank">Demo</a>
-                  <a href="https://github.com/PatriciaPoveda/Listado-de-personajes-de-Rick-and-Morty" target="_blank" class="project-btn"
-                    >Code
-                  </a>
-                </div>
+              </div>
+              <div class="project-wrapper__article--btn">
+                <a href="https://patriciapoveda.github.io/Listado-de-personajes-de-Rick-and-Morty/" class="project-btn" target="_blank">Demo</a>
+                <a href="https://github.com/PatriciaPoveda/Listado-de-personajes-de-Rick-and-Morty" target="_blank" class="project-btn">Code </a>
               </div>
             </article>
 
@@ -474,7 +372,7 @@
         <div class="menu-wrapper">
           <small class="menu-wrapper__copy">
             <a href="#top" class="menu-wrapper__copy--home" title="Ir a inicio"
-              ><i class="fa fa-university" aria-hidden="true"></i>Inicio</a
+              ><i class="bx bxs-home"></i>Inicio</a
             >
             <span class="menu-wrapper__copy--message">Contad conmigo PARA TODO</span>
             <span class="menu-wrapper__copy--item">&copy;2021</span>
