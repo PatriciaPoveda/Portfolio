@@ -21,23 +21,22 @@
       grid-template-rows: 50px 500px 50px 500px;
     }
     &__title {
-      font-size: 1.5rem;
+      font-size: $textTitleMin;
       line-height: 1.25;
-      text-transform: uppercase;
       grid-column: 1 / 7;
       @media all and (min-width: 768px) {
-        font-size: 1.625rem;
+        font-size: $textTitleMed;
         line-height: 1.73;
       }
       @media all and (min-width: 1200px) {
-        font-size: 2rem;
+        font-size: $textTitleMax;
         line-height: 1.41;
       }
     }
     &__article {
       background-color: $colorSecundary2;
       grid-column: 1 / 7;
-      height: 500px;
+      height: 457px;
       width: 260px;
       margin: auto;
       border-radius: 20px;
@@ -45,9 +44,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      @media all and (min-width: 768px) {
-        height: 500px;
-      }
       &.item1 {
         @media all and (min-width: 768px) {
           grid-column: 1 / 2;
@@ -102,22 +98,20 @@
       &--title {
         text-decoration: none;
         color: $colorCart;
-        font-size: 18px;
+        font-size: 1.5rem;
         line-height: 1.67;
-        height: 55px;
         margin-top: 10px;
         @media all and (min-width: 768px) {
-          font-size: 24px;
           line-height: 1.25;
         }
       }
       &--text {
-        font-size: 1.125rem;
+        font-size: $textBasicMed;
         line-height: 1.67;
         color: $colorHover;
-        font-weight: 600;
+        margin: 0 10px;
+        text-align: center;
         @media all and (min-width: 768px) {
-          font-size: 1.25rem;
           line-height: 1.5;
         }
       }

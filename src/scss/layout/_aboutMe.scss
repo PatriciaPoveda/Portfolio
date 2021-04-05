@@ -20,15 +20,15 @@
       max-width: 60%;
     }
     &--title {
-      font-size: 1.5rem;
+      font-size: $textTitleMin;
       line-height: 1.25;
       text-transform: capitalize;
       @media all and (min-width: 768px) {
-        font-size: 1.625rem;
+        font-size: $textTitleMed;
         line-height: 1.73;
       }
       @media all and (min-width: 1200px) {
-        font-size: 2.5rem;
+        font-size: $textTitleMax;
         line-height: 1.41;
       }
     }
@@ -52,6 +52,10 @@
         line-height: 1.5;
       }
     }
+    &--cite {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
   }
 }
 .text {
@@ -63,17 +67,19 @@
   font-weight: 600;
   text-align: justify;
   margin-top: 20px;
-  background-color: $textPrimary;
+  background-color: rgba(32, 53, 114, 0.9);
   padding: 20px;
   border-radius: 10px;
   @media all and (min-width: 1200px) {
     margin: 91px 15px 0 100px;
-    height: 420px;
+    height: 370px;
     text-align: center;
   }
   &__section--title {
-    margin-top: -10px;
+    margin-top: -5px;
+    margin-bottom: 10px;
     font-size: 18px;
+    color: $colorSecundary;
   }
   .moreAboutMe__sectionWrapper {
     display: flex;

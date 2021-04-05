@@ -19,6 +19,7 @@
 		"gulp-sourcemaps": "*",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-zip": "*",
+		"magic.css": "^1.4.6",
 		"run-sequence": "*"
 	},
 	"devDependencies": {

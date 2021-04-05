@@ -17,14 +17,14 @@
   margin: 0 15px;
 }
 .gessNumberTitle {
-  font-size: 35px;
+  font-size: $textTitleMin;
   @media all and (min-width: 768px) {
-    font-size: 40px;
+    font-size: $textTitleMed;
   }
 }
 .gessNumberForm {
   &__title {
-    font-size: 20px;
+    font-size: $textBasicMin;
     font-weight: 600;
   }
   &__number {

@@ -1,15 +1,10 @@
 .moreAboutMe__sectionWrapper--art {
-  background-color: #dfdfdd;
+  background-color: $colorSecundary;
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
-}
-.moreAboutMe__sectionWrapper--artImg {
-  width: 55px;
-  margin: 17px;
-  @media all and (min-width: 768px) {
-    margin: 10px;
-  }
+  text-align: center;
+  font-size: 0.9rem;
 }
 .moreAboutMe__sectionWrapper--artText {
   text-align: center;
@@ -18,8 +13,14 @@
 .icons {
   height: 20px;
   width: 20px;
-  color: #dfdfdd;
 }
 .fa {
+  margin-right: 8px;
+}
+.bx {
+  font-size: 4rem;
+}
+.bxs-home {
+  font-size: 1.5rem;
   margin-right: 8px;
 }

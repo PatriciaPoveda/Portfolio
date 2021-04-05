@@ -6,35 +6,18 @@ const navBar = document.querySelector(".js-bar__nav");
 const openNav = () => {
   if (navContainer.classList.contains("hidden")) {
     navContainer.classList.remove("hidden");
-    // navContainer.classList.add("open");
-    // navContainer.classList.remove("close");
+    btnMenu.classList.add("whiteBtnToggle");
   } else {
-    // navContainer.classList.add("close");
-    // navContainer.classList.remove("open");
+    btnMenu.classList.remove("whiteBtnToggle");
     navContainer.classList.add("hidden");
   }
 };
 
 btnMenu.addEventListener("click", openNav);
 
-// const closeNav = () => {
-//   // navContainer.classList.add("close");
-//   // navContainer.classList.remove("open");
-//   navContainer.classList.add("hidden");
-// };
-
-// navContainer.addEventListener("click", closeNav);
-
 const closeNavLink = () => {
-  if (navContainer.classList.contains("hidden")) {
-    navContainer.classList.remove("hidden");
-    // navContainer.classList.add("open");
-    // navContainer.classList.remove("close");
-  } else {
-    // navContainer.classList.add("close");
-    // navContainer.classList.remove("open");
-    navContainer.classList.add("hidden");
-  }
+  navContainer.classList.add("hidden");
+  btnMenu.classList.remove("whiteBtnToggle");
 };
 
 navLink.addEventListener("click", closeNavLink);
