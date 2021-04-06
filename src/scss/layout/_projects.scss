@@ -99,21 +99,15 @@
         text-decoration: none;
         color: $colorCart;
         font-size: 1.5rem;
-        line-height: 1.67;
+        line-height: 1.25;
         margin-top: 10px;
-        @media all and (min-width: 768px) {
-          line-height: 1.25;
-        }
       }
       &--text {
         font-size: $textBasicMed;
-        line-height: 1.67;
+        line-height: 1.5;
         color: $colorHover;
         margin: 0 10px;
         text-align: center;
-        @media all and (min-width: 768px) {
-          line-height: 1.5;
-        }
       }
       &--btn {
         margin: 10px 0;
