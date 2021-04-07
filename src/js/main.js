@@ -1,9 +1,9 @@
 "use strict";
-const imgProjects = document.querySelector(".js-img-wrapper");
+const btnInit = document.querySelector(".js-menu-wrapper__copy--home");
 
-const moveImg = () => {
-  imgProjects.classList.add("magictime", "boingInUp");
-  console.log("5");
+const paintBtn = () => {
+  btnFa.classList.add("scrollUp");
+  toggle.classList.add("scrollUp");
 };
 
-imgProjects.addEventListener("click", moveImg);
+btnInit.addEventListener("click", paintBtn);
