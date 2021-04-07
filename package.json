@@ -1,7 +1,7 @@
 {
-	"name": "port",
+	"name": "portfolio",
 	"version": "3.0.1",
-	"description": "Portfolio de Patricia Poveda Boto",
+	"description": "portfolio",
 	"dependencies": {
 		"browser-sync": "^2.26.12",
 		"del": "^5.1.0",
@@ -19,7 +19,6 @@
 		"gulp-sourcemaps": "*",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-zip": "*",
-		"magic.css": "^1.4.6",
 		"run-sequence": "*"
 	},
 	"devDependencies": {
