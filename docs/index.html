@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mi Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Baskervville&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,34 +17,8 @@
       rel="stylesheet"
     />
     <link
-      href="//db.onlinewebfonts.com/c/7fe31e43d915d5ecfc475ec9b2ae311d?family=Dirtgrub+Graffiti"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <style type="text/css" media="screen, print">
-      @font-face {
-        font-family: "Dirtgrub Graffiti";
-        src: url("//db.onlinewebfonts.com/t/7fe31e43d915d5ecfc475ec9b2ae311d.eot");
-        src: url("//db.onlinewebfonts.com/t/7fe31e43d915d5ecfc475ec9b2ae311d.eot?#iefix")
-            format("embedded-opentype"),
-          url("//db.onlinewebfonts.com/t/7fe31e43d915d5ecfc475ec9b2ae311d.woff2")
-            format("woff2"),
-          url("//db.onlinewebfonts.com/t/7fe31e43d915d5ecfc475ec9b2ae311d.woff")
-            format("woff"),
-          url("//db.onlinewebfonts.com/t/7fe31e43d915d5ecfc475ec9b2ae311d.ttf")
-            format("truetype"),
-          url("//db.onlinewebfonts.com/t/7fe31e43d915d5ecfc475ec9b2ae311d.svg#DirtgrubGraffiti")
-            format("svg");
-      } ;
-    </style>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -59,9 +30,7 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="../scss/scss/magic.scss" /> -->
   </head>
-
   <body>
     <div class="js-page">
       <header id="top" class="top">
@@ -95,7 +64,7 @@
           </ul>
         </nav>
         <div class="bar">
-          <nav class="bar__nav js-bar__nav">
+          <nav class="bar__nav js-bar__nav  magictime boingInUp">
             <ul class="bar__nav--list">
               <li>
                 <a
@@ -136,21 +105,12 @@
           </nav>
         </div>
         <div class="hero">
-          <h1 class="hero__title animate__animated animate__fadeInDown">
+          <h1 class="hero__title magictime perspectiveUpReturn">
             Patricia Poveda
           </h1>
-          <h4 class="hero__subTitle animate__animated animate__fadeInLeft">
+          <h4 class="hero__subTitle magictime perspectiveRightReturn ">
             Frontend developer
           </h4>
-          <!-- <div class="hero__wrapper">
-            <img
-              class="hero__wrapper--img animate__animated animate__wobble"
-              src="./assets/images/hola.png"
-              alt=""
-            />
-            <h3 class="hero__wrapper--title">¡Hola mundo!</h3>
-          </div>
-        </div> -->
       </header>
 
       <main>
@@ -190,8 +150,8 @@
                 </p>
                 <p class="text">
                   Ahora estoy en la búsqueda de mi primera oportunidad como
-                  <strong>frontend developer</strong> y tengo muchas ganas no solo de
-                  demostrar toda mi capacidad de aprendizaje sino toda la ilusión y el
+                  <strong>frontend developer</strong> y tengo muchas ganas, no solo de
+                  demostrar toda mi capacidad de aprendizaje, sino toda la ilusión y el
                   esfuerzo que le puedo poner al trabajo.
                 </p>
               </div>
@@ -233,8 +193,8 @@
                 </div>
 
                 <div class="moreAboutMe__sectionWrapper--art">
-                  <i alt="Logo de GitHub" class="bx bxl-git"></i>
-                  <p class="moreAboutMe__sectionWrapper--artText">GitHub</p>
+                  <i alt="Logo de Git" class="bx bxl-git"></i>
+                  <p class="moreAboutMe__sectionWrapper--artText">Git</p>
                 </div>
 
               </div>
@@ -248,8 +208,12 @@
             <h3 class="project-wrapper__title">Proyectos conjuntos</h3>
             <article class="project-wrapper__article item1">
               <div>
-                <div class="img-wrapper">
-                  <img src="./assets/images/proyects/codeflix.png" alt="Logo de Codeflix" class="project-wrapper__article--img" />
+                <div class="img-wrapper js-img-wrapper">
+                  <img
+                    src="./assets/images/proyects/codeflix.png"
+                    alt="Logo de Codeflix"
+                    class="project-wrapper__article--img js-project-wrapper__article--img"
+                  />
                 </div>
 
                 <h4 class="project-wrapper__article--title">Codeflix</h4>
@@ -264,8 +228,12 @@
 
             <article class="project-wrapper__article item2">
               <div>
-                <div class="img-wrapper">
-                  <img src="./assets/images/proyects/logoStarCodingLabs-Blue.png" alt="Logo de Star Coding Labs" class="project-wrapper__article--img" />
+                <div class="img-wrapper js-img-wrapper">
+                  <img
+                    src="./assets/images/proyects/logoStarCodingLabs-Blue.png"
+                    alt="Logo de Star Coding Labs"
+                    class="project-wrapper__article--img js-project-wrapper__article--img"
+                  />
                 </div>
 
                 <h4 class="project-wrapper__article--title">Profile Card</h4>
@@ -280,8 +248,12 @@
 
             <article class="project-wrapper__article item3">
               <div>
-                <div class="img-wrapper">
-                  <img src="./assets/images/proyects/Reservoir_code_White_bck.png" alt="Logo de Reservoir-CODE" class="project-wrapper__article--img" />
+                <div class="img-wrapper js-img-wrapper">
+                  <img
+                    src="./assets/images/proyects/Reservoir_code_White_bck.png"
+                    alt="Logo de Reservoir-CODE"
+                    class="project-wrapper__article--img js-project-wrapper__article--img"
+                  />
                 </div>
 
                 <h4 class="project-wrapper__article--title">Reservoir _Code</h4>
@@ -296,8 +268,12 @@
             <h3 class="project-wrapper__title">Proyectos personales</h3>
             <article class="project-wrapper__article item4">
               <div>
-                <div class="img-wrapper">
-                  <img src="./assets/images/proyects/buscador_codeflix.png" alt="Logo del buscador de Codeflix" class="project-wrapper__article--img" />
+                <div class="img-wrapper js-img-wrapper">
+                  <img
+                    src="./assets/images/proyects/buscador_codeflix.png"
+                    alt="Logo del buscador de Codeflix"
+                    class="project-wrapper__article--img js-project-wrapper__article--img"
+                  />
                 </div>
 
                 <h4 class="project-wrapper__article--title">Buscador de series Codeflix</h4>
@@ -312,8 +288,12 @@
 
             <article class="project-wrapper__article item5">
               <div>
-                <div class="img-wrapper">
-                  <img src="./assets/images/proyects/Rick_and_Morty.jpg" alt="Logo de Rick y Morty" class="project-wrapper__article--img" />
+                <div class="img-wrapper js-img-wrapper">
+                  <img
+                    src="./assets/images/proyects/Rick_and_Morty.jpg"
+                    alt="Logo de Rick y Morty"
+                    class="project-wrapper__article--img js-project-wrapper__article--img"
+                  />
                 </div>
 
                 <h4 class="project-wrapper__article--title">Buscador de Rick and Morty</h4>
@@ -352,9 +332,9 @@
                 value="Prueba"
               />
               <input
-                class="gessNumberForm__wrapper--btnReset js-btn-reset"
+                class="gessNumberForm__wrapper--btn js-btn-reset"
                 type="button"
-                value="Reset"
+                value="Nuevo juego"
               />
             </div>
           </form>
