@@ -8,6 +8,7 @@
     transform-origin: 100% 0;
     -webkit-transform: perspective(800px) rotateY(180deg);
     transform: perspective(800px) rotateY(180deg);
+    opacity: 0;
   }
 
   100% {
@@ -15,6 +16,7 @@
     transform-origin: 100% 0;
     -webkit-transform: perspective(800px) rotateY(0deg);
     transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
   }
 }
 @keyframes perspectiveRightReturn {
@@ -23,6 +25,7 @@
     transform-origin: 100% 0;
     -webkit-transform: perspective(800px) rotateY(180deg);
     transform: perspective(800px) rotateY(180deg);
+    opacity: 0;
   }
 
   100% {
@@ -30,5 +33,6 @@
     transform-origin: 100% 0;
     -webkit-transform: perspective(800px) rotateY(0deg);
     transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
   }
 }

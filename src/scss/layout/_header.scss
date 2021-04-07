@@ -1,7 +1,7 @@
 .bar {
   height: 40px;
   width: 100vw;
-  background-color: rgba(32, 53, 114, 0.9);
+  background-color: $colorPrimaryShadow;
   position: fixed;
   z-index: 1;
   bottom: 0;
@@ -59,7 +59,8 @@
   width: 100vw;
   position: fixed;
   height: 40px;
-  background-color: white;
+  background-color: $colorSecundary;
+  background-color: $colorPrimary;
   z-index: 1;
   transition: transform 0.3s;
   @media all and (min-width: 768px) {
@@ -79,8 +80,8 @@
 .hero-header-menu {
   position: fixed;
   right: 0;
-  margin: 5px 0px 0 auto;
-  color: $colorPrimary;
+  margin: 5px 5px 0 auto;
+  color: $colorSecundary;
   height: 0px;
   outline: 0;
   border: 0;
@@ -90,12 +91,12 @@
 
   @media all and (min-width: 768px) {
     font-size: 2.2rem;
-    margin: 5px 5px 0 auto;
+    // margin: 5px 5px 0 auto;
   }
 }
-.whiteBtnToggle {
-  color: $textPrimary;
-}
+// .whiteBtnToggle {
+//   color: $colorSecundary;
+// }
 .navToggleTitle {
   text-align: center;
   font-size: 1.6rem;
@@ -106,11 +107,11 @@
   }
 }
 .navToggle {
-  background-color: rgba(32, 53, 114, 1);
+  background-color: $colorPrimary2;
   position: fixed;
   width: 100vw;
   z-index: 2;
-  box-shadow: 0 8px 9px rgba(77, 48, 48, 170%);
+  box-shadow: 0 2px 2px rgba(77, 48, 48, 170%);
   @media all and (min-width: 1200px) {
     width: 20vw;
     right: 0;
@@ -126,58 +127,52 @@
     }
     &--item {
       margin: 20px;
-      border-bottom: rgb(209, 208, 207) 1px solid;
+      border-bottom: $colorSecundary 1px solid;
     }
   }
 }
 .hero {
+  font-family: $fontTitle;
   height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 7vw;
-
+  text-align: justify;
+  padding-left: 7%;
+  background-color: $colorPrimary;
+  @media all and (min-width: 540px) {
+    padding-left: 5%;
+  }
   &__title {
-    font-size: 25vw;
-    text-align: justify;
-    color: #121d40;
-    @media all and (min-width: 768px) {
-      font-size: 20vw;
+    font-size: 23vw;
+    color: $colorSecundary;
+    @media all and (min-width: 540px) {
+      font-size: 12vw;
     }
     @media all and (min-width: 1200px) {
       font-size: 10vw;
     }
   }
   &__subTitle {
-    font-size: 10vw;
-    color: $colorSecundary;
-    @media all and (min-width: 768px) {
+    font-size: 9vw;
+    color: $colorPrimary2;
+    @media all and (min-width: 540px) {
       font-size: 7vw;
     }
     @media all and (min-width: 1200px) {
       font-size: 5vw;
     }
   }
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
-    &--title {
-      width: 80vw;
-      font-size: 2rem;
-      color: $colorSecundary2;
-      @media all and (min-width: 768px) {
-        font-size: 3rem;
-      }
-    }
-    &--img {
-      width: 100px;
-      @media all and (min-width: 768px) {
-        width: 150px;
-      }
-    }
-  }
+}
+
+.magictime.boingInUp {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  animation-duration: 1.5s;
+}
+.magictime.perspectiveRightReturn {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }

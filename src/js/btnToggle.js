@@ -1,23 +1,18 @@
 const btnMenu = document.querySelector(".js-btnMenu");
 const navContainer = document.querySelector(".js-nav");
 const navLink = document.querySelector(".js-link");
-const navBar = document.querySelector(".js-bar__nav");
 
 const openNav = () => {
   if (navContainer.classList.contains("hidden")) {
     navContainer.classList.remove("hidden");
-    btnMenu.classList.add("whiteBtnToggle");
+    window.addEventListener("scroll", closeNavLink);
   } else {
-    btnMenu.classList.remove("whiteBtnToggle");
     navContainer.classList.add("hidden");
   }
 };
-
-btnMenu.addEventListener("click", openNav);
-
 const closeNavLink = () => {
   navContainer.classList.add("hidden");
-  btnMenu.classList.remove("whiteBtnToggle");
 };
 
+btnMenu.addEventListener("click", openNav);
 navLink.addEventListener("click", closeNavLink);
