@@ -166,14 +166,22 @@
     }
   }
 }
-
-.magictime.boingInUp {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+.magictime.openDownLeftReturn {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
-// .magictime.perspectiveRightReturn {
-//   -webkit-animation-delay: 0.8s;
-//   animation-delay: 0.8s;
-// }
+
+.magictime.boingInUp {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+.magictime.spaceInUp {
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+.magictime.puffIn {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}

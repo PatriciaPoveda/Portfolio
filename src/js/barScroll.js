@@ -5,6 +5,7 @@ let lastScroll = 0;
 
 const closeBar = () => {
   const currentScroll = window.pageYOffset;
+  btnFa.classList.remove("magictime", "puffIn");
   if (currentScroll === 0) {
     toggle.classList.add("scrollUp");
     btnFa.classList.add("scrollUp");
@@ -28,7 +29,6 @@ const closeBar = () => {
     btnFa.classList.add("scrollUp");
   }
   lastScroll = currentScroll;
-  console.log(lastScroll);
 };
 
 window.addEventListener("scroll", closeBar);
