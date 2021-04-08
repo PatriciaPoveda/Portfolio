@@ -5,9 +5,9 @@ let lastScroll = 0;
 
 const closeBar = () => {
   const currentScroll = window.pageYOffset;
-  if (currentScroll == 0) {
-    toggle.classList.remove("scrollUp");
-    btnFa.classList.remove("scrollUp");
+  if (currentScroll === 0) {
+    toggle.classList.add("scrollUp");
+    btnFa.classList.add("scrollUp");
     return;
   }
 
