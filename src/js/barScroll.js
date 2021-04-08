@@ -28,6 +28,7 @@ const closeBar = () => {
     btnFa.classList.add("scrollUp");
   }
   lastScroll = currentScroll;
+  console.log(lastScroll);
 };
 
 window.addEventListener("scroll", closeBar);
