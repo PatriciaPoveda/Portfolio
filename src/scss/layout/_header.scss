@@ -68,7 +68,7 @@
   }
 }
 .scrollDown {
-  transform: translate3d(0, -150%, 0);
+  transform: translate(0, -150%);
 }
 
 .scrollUp {
@@ -167,13 +167,13 @@
   }
 }
 
-// .magictime.boingInUp {
-//   -webkit-animation-delay: 2s;
-//   animation-delay: 2s;
-//   -webkit-animation-duration: 1.5s;
-//   animation-duration: 1.5s;
-// }
-.magictime.perspectiveRightReturn {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+.magictime.boingInUp {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
+// .magictime.perspectiveRightReturn {
+//   -webkit-animation-delay: 0.8s;
+//   animation-delay: 0.8s;
+// }
