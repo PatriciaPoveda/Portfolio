@@ -69,13 +69,16 @@
 }
 .scrollDown {
   transform: translate(0, -150%);
+  -webkit-transform: translate(0, -150%);
 }
 
 .scrollUp {
   transform: none;
+  -webkit-transform: none;
 }
 .fa-bars {
   transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
 }
 .hero-header-menu {
   position: fixed;
@@ -91,12 +94,8 @@
 
   @media all and (min-width: 768px) {
     font-size: 2.2rem;
-    // margin: 5px 5px 0 auto;
   }
 }
-// .whiteBtnToggle {
-//   color: $colorSecundary;
-// }
 .navToggleTitle {
   text-align: center;
   font-size: 1.6rem;
