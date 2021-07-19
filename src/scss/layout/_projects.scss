@@ -36,6 +36,7 @@
     }
     &__article {
       background-color: $colorPrimary2;
+      background-color: $colorSecundary;
       grid-column: 1 / 7;
       height: 457px;
       width: 260px;
@@ -74,22 +75,52 @@
           grid-column: 1 / 2;
         }
         @media all and (min-width: 1200px) {
-          grid-column: 2 / 4;
+          grid-column: 1 / 3;
         }
       }
       &.item5 {
         @media all and (min-width: 768px) {
-          grid-column: 3 / 4;
+          grid-column: 3/ 4;
         }
         @media all and (min-width: 1200px) {
-          grid-column: 4 / 6;
+          grid-column: 3 / 5;
         }
       }
+      &.item6 {
+        @media all and (min-width: 768px) {
+          grid-column: 2 / 3;
+        }
+        @media all and (min-width: 1200px) {
+          grid-column: 5 / 7;
+        }
+      }
+      // &.item4 {
+      //   @media all and (min-width: 768px) {
+      //     grid-column: 1 / 2;
+      //   }
+      //   @media all and (min-width: 1200px) {
+      //     grid-column: 2 / 4;
+      //   }
+      // }
+      // &.item5 {
+      //   @media all and (min-width: 768px) {
+      //     grid-column: 3 / 4;
+      //   }
+      //   @media all and (min-width: 1200px) {
+      //     grid-column: 4 / 6;
+      //   }
+      // }
+
       .img-wrapper {
         width: 220px;
         height: 150px;
-        background-color: white;
+        background: white;
         border-radius: 20px;
+      }
+      .imgItem {
+        display: flex;
+        align-items: center;
+        background-color: black;
       }
       &--img {
         border-radius: 20px;
@@ -98,7 +129,8 @@
       }
       &--title {
         text-decoration: none;
-        color: $colorCart;
+        // color: $colorCart;
+        color: $colorPrimary2;
         font-size: 1.5rem;
         line-height: 1.25;
         margin-top: 10px;
@@ -108,6 +140,7 @@
         line-height: 1.5;
         margin: 0 10px;
         text-align: center;
+        color: $colorPrimary2;
       }
       &--btn {
         margin: 10px 0;
@@ -115,13 +148,14 @@
     }
   }
 }
+
 .project-btn {
   text-decoration: none;
   padding: 4px 25px;
   outline: none;
   border: none;
   border-radius: 25px;
-  background-color: $colorCart;
+  background-color: $colorPrimary2;
   font-size: 1.125rem;
   &:hover {
     @media all and (min-width: 1200px) {

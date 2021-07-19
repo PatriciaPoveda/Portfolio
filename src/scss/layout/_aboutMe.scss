@@ -1,7 +1,6 @@
 .aboutMe {
   position: relative;
-  background-color: $colorSecundary;
-  color: $colorPrimary;
+  color: $colorPrimary2;
   padding: 30px 15px 45px 15px;
   @media all and (min-width: 768px) {
     padding: 30px 39px 60px 39px;
@@ -65,11 +64,12 @@
 }
 
 .moreAboutMe {
+  color: $colorHover;
   font-size: 17px;
   font-weight: 600;
   text-align: justify;
   margin-top: 20px;
-  background-color: $colorPrimary;
+  background-color: $colorSecundary;
   padding: 20px;
   border-radius: 10px;
   @media all and (min-width: 1200px) {
@@ -81,7 +81,7 @@
     margin-top: -5px;
     margin-bottom: 10px;
     font-size: 18px;
-    color: $colorSecundary;
+    color: $colorPrimary2;
   }
   .moreAboutMe__sectionWrapper {
     display: flex;
