@@ -1,7 +1,6 @@
 .games {
   position: relative;
   color: $colorPrimary2;
-  // background-color: $colorSecundary;
   padding: 30px 0;
   &__info {
     font-size: 26px;
@@ -34,7 +33,7 @@
     border-radius: 5px;
     background-color: rgb(233, 229, 229);
     background-color: white;
-    border: 0;
+    border: 2px solid $colorPrimary;
     outline: 0;
     padding-left: 5px;
     font-size: 16px;

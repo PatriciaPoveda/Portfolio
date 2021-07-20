@@ -59,7 +59,6 @@
   width: 100vw;
   position: fixed;
   height: 40px;
-  background-color: $colorSecundary;
   background-color: $colorPrimary;
   z-index: 1;
   transition: transform 0.3s;
@@ -111,6 +110,7 @@
 }
 .navToggle {
   background-color: $colorPrimary2;
+
   position: fixed;
   width: 100vw;
   z-index: 2;
@@ -150,7 +150,7 @@
   }
   &__title {
     font-size: 23vw;
-    color: $colorSecundary;
+    // color: $colorSecundary;
     @media all and (min-width: 540px) {
       font-size: 12vw;
     }
